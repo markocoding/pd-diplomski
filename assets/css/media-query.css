@@ -1,0 +1,40 @@
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.third-col-foo{
+		text-align: right!important;
+		margin-top: 20%!important;
+	}
+
+	.bg{
+		/*position: absolute;*/
+		/*top: 0;*/
+		width: 100%;
+		min-height: 100vh;
+		background-image: url("../img/slika3.jpg");
+		background-repeat: no-repeat;
+		/*background-attachment: fixed;*/
+		background-position: center;
+	}
+
+}
+
+@media (max-width: 992px) {
+	footer{
+		text-align: center;
+	}
+
+
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }

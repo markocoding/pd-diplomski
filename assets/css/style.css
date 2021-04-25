@@ -1,0 +1,619 @@
+/*COLORS*/
+
+ /*YELLOW rgb(250, 183, 33) */
+
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+/*------------------ SCROLL ANMIATION ------------------*/
+
+.scroll {
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	display: block;
+	font-size: 0.933rem;
+	color: white;
+	text-decoration: none;
+}
+.scroll::before {
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 32px;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 14px;
+	content: "";
+}
+.scroll::after {
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	width: 2px;
+	height: 8px;
+	background: white;
+	border-radius: 2px;
+	content: "";
+	animation-name: scroll;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+@keyframes scroll {
+	0% {
+		opacity: 1;
+		height: 8px;
+	}
+	20% {
+		opacity: 1;
+		height: 8px;
+	}
+	30% {
+		transform: translateY(0);
+		opacity: 1;
+		height: 25px;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		transform: translateY(25px);
+		opacity: 0;
+		height: 0;
+	}
+	81% {
+		transform: translateY(0);
+		opacity: 0;
+		height: 8px;
+	}
+	100% {
+		opacity: 1;
+		height: 8px;
+	}
+}
+
+/*------------------ NAVIGATION ------------------*/
+
+.my-navbar{
+	padding-top:  0;
+	padding-bottom: 0;
+	top: 0;
+	z-index: 3;
+	background: transparent !important;
+
+	position: fixed!important;
+	width: 100%!important;
+
+	font-size:  20px;
+
+	transition:  0.3s ease-in-out ;
+
+}
+
+.small-nav{
+	font-size:  16px!important;
+	/*background-color: rgba(3, 102, 60,0.8)!important;*/
+	background-color: rgba(250, 183, 33,0.9)!important;
+
+
+}
+
+#logo{
+	padding-left: 10px;
+	padding-top: 10px ;
+	height: 80px;
+	transition:  0.3s ease-in-out ;
+}
+
+.small-logo{
+	padding: 0!important;
+	height: 50px!important;
+	filter: invert(100%);
+}
+
+.nav-item::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width 0.3s;
+}
+
+.nav-item:hover::after {
+	width: 100%;
+}
+
+.my-active:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: white;
+}
+/*==========================================*/
+.carousel-calendar-bg{
+	background-image: url("../img/january.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+
+
+.calendar-bg{
+	padding: 7%;
+	background-image: url("../img/calendar.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+
+.calendar-bg > h3{
+	margin-left: 10vw;
+	letter-spacing: 2px;
+	font-weight: 400 ;
+	padding: 10px;
+	background-color: rgb(250, 183, 33);
+}
+
+.guide-bg{
+	padding: 7%;
+	background-image: url("../img/guide.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+.guide-bg > h2{
+	font-weight: 400 ;
+	color: white;
+}
+.guide-bg > h1{
+color: white;
+}
+.guide-bg > h3{
+	margin-left: 10vw;
+	letter-spacing: 2px;
+	font-weight: 400 ;
+	padding: 10px;
+	background-color: rgb(250, 183, 33);
+}
+
+.bg{
+	background-image: url("../img/slika3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+
+
+[data-animate]{
+	/*color: transparent!important;*/
+	opacity: 0;
+}
+/*.sliding-line2:before{*/
+/*	content: "";*/
+/*	display: block;*/
+/*	height: 100%;*/
+/*	width: 2px;*/
+/*	background: red;*/
+/*	transition: height 0.3s;*/
+/*}*/
+
+/*.nav-item > .nav-link {*/
+/*    padding-top: 20px ;*/
+/*    padding-bottom: 20px ;*/
+/*}*/
+
+/*.my-item{*/
+/*    background: linear-gradient(to left, transparent 50%, red 50%) right;*/
+/*    background-size: 200%;*/
+/*    transition: .2s ease-in;*/
+/*    */
+/*}*/
+
+/*.nav-item:hover{*/
+/*	border-bottom: 2px white solid;*/
+/*	transition: .2s linear;*/
+/*}*/
+
+
+
+/*.nav-item:hover > .nav-link{*/
+/*	 color: white!important;*/
+/*	 transition: .2s ease-in;*/
+/* }*/
+
+
+
+/*.my-active > .nav-link{*/
+/*     color: black!important;*/
+/*}*/
+/*------------------ CALENDAR TABLE ------------------*/
+
+tr:nth-child(odd) {
+	background: rgba(20,50,100,0.2);
+}
+td{
+	padding: 2rem;
+	transition: 0.2s linear;
+	font-size: 20px;
+}
+tr{
+	border-bottom: rgb(250, 183, 33) solid 15px;
+
+}
+/*tr td:first-child {*/
+/*	!*font-weight: 800;*!*/
+/*}*/
+
+tr:hover  td{
+	background-color: #ffee99;
+	cursor: pointer;
+	/*font-size: 25px;*/
+}
+
+.isaffected {
+	background-color: #ffee99!important;
+
+}
+/*------------------ COUNTER ------------------*/
+.counter-bg{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/holly-mandarich-7MrXw_o7Eo4-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	box-shadow:inset 0 0 0 2000px rgba(3, 102, 60,0.1);
+}
+
+/*------------------ FOOTER ------------------*/
+
+/*.footer-bg{*/
+/*	width: 100%;*/
+/*	height: 100vh;*/
+/*	background-image: url("../img/cameron-vaughan-0AV7XLABuZk-unsplash.jpg");*/
+/*	background-repeat: no-repeat;*/
+/*	!*background-attachment: fixed;*!*/
+/*	background-position: bottom;*/
+/*	!*box-shadow:inset 0 0 0 2000px rgba(3, 102, 60,0.5);*!*/
+/*	box-shadow:inset 0 0 0 2000px rgba(0, 0, 0,0.5);*/
+/*}*/
+
+
+/*#square1{*/
+/*	width: 0;*/
+/*	height: 0;*/
+/*	border-bottom: 100px solid #ffee99;*/
+/*	border-left:  100vw solid transparent;*/
+
+/*}*/
+
+#triangle {
+	/* THIS IS THE MAGIC: using the directional keywords instead
+	   of an angle in the linear gradient property*/
+	background-image: linear-gradient(to left top, #ffee99 0%, #ffee99 50%, transparent 50%);
+	position: relative;
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	left: 0;
+}
+
+#square2 {
+	width: 100%;
+	/*height: 400px;*/
+	background: #ffee99;
+}
+
+.col-foo{
+	text-decoration: none;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 30px;
+	transition: ease-in-out 0.1s;
+
+}
+.col-foo:hover{
+	background-color: rgba(250, 183, 33, 1);
+	color: white;
+	text-decoration: none;
+	font-size: 150%;
+	font-weight: 600;
+
+}
+
+.socila-foo{
+	text-decoration: none;
+	color: black;
+	transition: ease-in-out 0.1s;
+}
+
+.socila-foo:hover{
+	text-decoration: none;
+	background-color: rgba(250, 183, 33, 1);
+	color: white;
+	font-size: 150%;
+	font-weight: 600;
+	padding: 20px;
+}
+
+/*------------------ SCROLL TO TOP ANIMATION ------------------*/
+
+#scroll-top{
+	/*height: 50px;*/
+	/*width: 50px;*/
+	/*background-color: red;*/
+	/*margin-right: 0px;*/
+	position: fixed;
+	bottom: 24px;
+	right: 10px ;
+	transition: linear 0.3s;
+	font-size: 150%;
+	padding: 30px;
+	padding-left: 0;
+
+}
+
+
+
+#scroll-top:hover {
+	/*letter-spacing: 5px;*/
+	/*font-weight: 600;*/
+	cursor: pointer;
+	padding-bottom: 30px;
+	font-size: 29px;
+	transition:ease-in-out  0.2s !important;
+
+}
+
+#scroll-top:hover > #glupost{
+	color: rgb(250, 183, 33)!important; ;
+}
+
+#glupost > .fas{
+	bottom: 30px;
+	left: 38px;
+	position: relative;
+	transition:ease-in-out  0.2s !important;
+
+
+}
+
+#scroll-top:hover > #glupost > .fas{
+	bottom: 70px;
+	left: 45px;
+	/*position: relative;*/
+	/*display: block;*/
+	color: rgb(250, 183, 33)!important; ;
+	transition:ease-in-out  0.2s !important;
+
+
+}
+
+
+.hide-scroll-button{
+	background-color: transparent!important;
+	color: transparent!important;
+	bottom: -100px!important;
+}
+
+.show-scroll-button{
+	bottom: 0;
+}
+
+
+
+/*.arrow:hover{*/
+/*	!*width: 100px!important;*!*/
+/*	!*padding: 20px!important;*!*/
+/*	!*transform: rotate(360deg);*!*/
+/*	letter-spacing: 10px;*/
+/*	!*left: 10px!important;*!*/
+/*	color: rgb(250, 183, 33)!important;*/
+
+
+
+/*}*/
+
+/*!*text*!*/
+
+/*.proba:after{*/
+/*	content: "TOP" !important;*/
+/*	position: relative;*/
+/*	bottom: 17px;*/
+/*	left: -70px;*/
+/*	font-size: 22px;*/
+/*	!*transform: rotate(-90deg)!important;*!*/
+
+/*}*/
+
+/*!*arrow*!*/
+
+/*.arrow {*/
+/*	background: black;*/
+/*	height: 1px;*/
+/*	width: 100px;*/
+/*	!*margin: 0 auto;*!*/
+/*	position: relative;*/
+/*	cursor: pointer;*/
+/*	bottom: 500px;*/
+/*	transform: rotate(-90deg);*/
+/*	transition:ease-in-out  0.2s !important;*/
+/*	!*transform: scale(1.1);*!*/
+/*}*/
+
+/*.arrow:before, .arrow:after {*/
+/*	content: "";*/
+/*	background:black;*/
+/*	position: absolute;*/
+/*	height: 1px;*/
+/*	width: 20px;*/
+/*}*/
+/*.arrow:before {*/
+/*	right: -3px;*/
+/*	bottom: -6px;*/
+/*	transform: rotate(-45deg);*/
+/*}*/
+/*.arrow:after {*/
+/*	right: -3px;*/
+/*	top: -7px;*/
+/*	transform: rotate(45deg);*/
+
+/*}*/
+/*------------------ ARROW ANIMATION ------------------*/
+
+
+
+.vla {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 100px;
+	margin-top: 15%;
+
+}
+
+
+.the-arrow {
+	width: 64px;
+	transition: all 0.2s;
+}
+.the-arrow.-left {
+	position: absolute;
+	top: 60%;
+	left: 0;
+}
+.the-arrow.-left > .shaft {
+	width: 0;
+	background-color: black;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+	width: 0;
+	background-color: black;
+}
+.the-arrow.-left > .shaft:before {
+	transform: rotate(0);
+}
+.the-arrow.-left > .shaft:after {
+	transform: rotate(0);
+}
+.the-arrow.-right {
+	top: 3px;
+}
+.the-arrow.-right > .shaft {
+	width: 64px;
+	transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+	width: 8px;
+	transition-delay: 0.3s;
+	transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+	transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+	transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+	background-color: black;
+	display: block;
+	height: 1px;
+	position: relative;
+	transition: all 0.2s;
+	/*transition-delay: 0;*/
+	will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+	background-color: black;
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 0.2s;
+	/*transition-delay: 0;*/
+}
+.the-arrow > .shaft:before {
+	transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+	transform-origin: bottom right;
+}
+
+.animated-arrow {
+	display: inline-block;
+	color: black;
+	font-size: 1.25em;
+	font-style: italic;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.2s;
+}
+.animated-arrow:hover {
+	color: rgb(250, 183, 33);
+	text-decoration: none;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+	width: 64px;
+	transition-delay: 0.1s;
+	background-color: rgb(250, 183, 33);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+	width: 8px;
+	transition-delay: 0.1s;
+	background-color: rgb(250, 183, 33);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+	transform: rotate(40deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+	transform: rotate(-40deg);
+}
+.animated-arrow:hover > .main {
+	transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+	width: 0;
+	transform: translateX(200%);
+	/*transition-delay: 0;*/
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+	width: 0;
+	/*transition-delay: 0;*/
+	transition: all 0.1s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+	transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+	transform: rotate(0);
+}
+.animated-arrow > .main {
+	display: flex;
+	align-items: center;
+	transition: all 0.2s;
+}
+.animated-arrow > .main > .text {
+	margin: 0 16px 0 0;
+	line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+	position: relative;
+}
+
