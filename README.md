@@ -3,6 +3,7 @@
 This is my college thesis from web design and first GitHub project.	
 ## Technologies used
 The backend part of this project is based on **PHP** and **CodeIgniter** framework as well as **MVC** architecture.
+
 For fronted and design i used **Bootstrap** and **Animate.style** in combination with **JavaScript** to make some fancy effects.
 Website uses **MySQL** database to generate content when needed.
 
