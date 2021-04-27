@@ -85,9 +85,8 @@
 <div id="scroll-top" class="hide-scroll-button" ><!--class="arrow "-->
 <!--	<div class="proba " ></div>-->
 
-	<a href="#section1" id="glupost"  style="text-decoration: none!important;color: black">
-		<i class="fas fa-chevron-up"></i>
-		top</a>
+	<a href="#section1" id="glupost"  style="text-decoration: none!important;color: rgba(10, 20 ,50, 0.2)">
+		<i class="fas fa-chevron-up"></i></a>
 </div>
 
 
