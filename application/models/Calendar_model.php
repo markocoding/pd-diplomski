@@ -10,7 +10,7 @@
 //				$this->db->from('guides.id = travels.guide_id');
 //				$this->db->where('guides.id = travels.guide_id');
 
-				$this->db->select("travels.id, travels.heading, travels.body, travels.date, travels.guide_id, guides.id, guides.name");
+				$this->db->select("travels.id, travels.heading, travels.body, travels.date, travels.difficulty, travels.travel_image, travels.guide_id,  guides.name");
 				$this->db->from("travels, guides");
 				$this->db->where("travels.guide_id=guides.id");
 				$this->db->order_by('date', 'ASC');
@@ -22,4 +22,12 @@
 			$query = $this->db->get_where('travels', array('id' => $id));
 			return $query->row_array();
 		}
+
+		public function get_travels_from_guide($id){
+			$this->db->order_by('date', 'ASC');
+			$query = $this->db->get_where('travels', array('guide_id' => $id));
+			return $query->result_array();
+		}
+
+
 	}

@@ -11,9 +11,8 @@ class Guides extends CI_Controller{
 
 	public function view($slug = NULL){
 		$data['guide'] = $this->guide_model->get_guides($slug);
-
-//		var_dump($data['guide']);
-
+		$data['travels'] = $this->calendar_model->get_travels_from_guide($data['guide']['id']);
+//		print_r($data['travels']);
 		if (empty($data['guide'])){
 			show_404();
 		}

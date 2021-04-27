@@ -7,10 +7,27 @@ class Calendars extends CI_Controller{
 
 //		var_dump($data['travels']);
 
+
 		$this->load->view('templates/header');
 		$this->load->view('calendar/index', $data);
 		$this->load->view('templates/footer');
 	}
+
+	public function view($id){
+
+
+		$data['travels'] = $this->calendar_model->get_travels($id);
+
+		if (empty($data['travels'])){
+			show_404();
+		}
+
+		$this->load->view('templates/header');
+		$this->load->view('calendar/view', $data);
+		$this->load->view('templates/footer');
+
+	}
+
 }
 
 

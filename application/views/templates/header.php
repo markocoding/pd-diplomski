@@ -2,20 +2,20 @@
     <head>
         <title>Planinarsko drustvo</title>
 <!--        <link rel="stylesheet" href="--><?php //site_url()?><!--assets/css/bootswatch.css">-->
-		<link rel="stylesheet" href="<?php site_url()?>assets/css/style.css">
-		<link rel="stylesheet" href="<?php site_url()?>assets/css/media-query.css">
-		<link rel="stylesheet" href="<?php site_url()?>assets/css/bootstrap.css"  >
-		<link rel="stylesheet" href="<?php site_url()?>assets/css/animate.css"  >
+		<link rel="stylesheet" href="<?php echo site_url()?>assets/css/style.css">
+		<link rel="stylesheet" href="<?php echo site_url()?>assets/css/media-query.css">
+		<link rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap.css"  >
+		<link rel="stylesheet" href="<?php echo site_url()?>assets/css/animate.css"  >
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
 
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-		<link rel="apple-touch-icon" sizes="180x180" href="<?php site_url()?>assets/img/fav/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" href="<?php site_url()?>assets/img/fav/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="<?php site_url()?>assets/img/fav/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="<?php site_url()?>assets/img/fav/manifest.json">
+		<link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url()?>assets/img/fav/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" href="<?php echo site_url()?>assets/img/fav/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="<?php echo site_url()?>assets/img/fav/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="<?php echo site_url()?>assets/img/fav/manifest.json">
 
 
 	</head>
