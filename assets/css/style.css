@@ -2,6 +2,16 @@
 
  /*YELLOW rgb(250, 183, 33) */
 
+/*--my-main-color: rgb(0, 117, 143, 0.8);  SVETLIJA PLAVA*/
+
+
+:root {
+	--my-main-color: rgba(0, 117, 143, 0.8);
+	--my-link-color: #fab721;
+	--my-secondary-color: #e4dbd9;
+
+
+}
 
 html{
 	scroll-behavior: smooth;
@@ -9,8 +19,10 @@ html{
 }
 
 ::selection {
-	background: rgba(250, 183, 33,1);
+	background: var(--my-link-color);
 }
+
+
 /*------------------ SCROLL ANMIATION ------------------*/
 
 .scroll {
@@ -81,6 +93,42 @@ html{
 		height: 8px;
 	}
 }
+/*------------------ GUIDE ------------------*/
+
+.guide-img{
+	max-width: 100%;
+	border-right: var(--my-main-color) solid 20px
+}
+
+/*------------------ BTN ------------------*/
+
+.my-btn{
+	/*background-color: transparent;*/
+	/*border: rgba(0, 0, 0, 0.5) 1px solid ;*/
+	/*padding: 10px;*/
+	/*transition: all 0.2s cubic-bezier(0.65, -0.25, 0.25, 1.95);*/
+	transition: all 0.2s ease-in-out;
+
+	/*transition: 0.1s ;*/
+	/*width: 250px;*/
+	/*font-size: 20px;*/
+	/*display: block;*/
+	/*text-align: center;*/
+	/*margin-top: 200px;*/
+	padding: 1rem;
+
+	background-color: var(--my-secondary-color);
+}
+
+.my-btn:hover{
+
+	/*background-color:rgba(0, 117, 143, 1);*/
+	background-color: var(--my-main-color);
+	color: white;
+
+
+}
+
 
 /*------------------ NAVIGATION ------------------*/
 
@@ -102,9 +150,8 @@ html{
 
 .small-nav{
 	font-size:  16px!important;
-	/*background-color: rgba(3, 102, 60,0.8)!important;*/
-	background-color: rgba(250, 183, 33,0.9)!important;
-
+	background-color: var(--my-main-color)!important;
+	/*background-color: rgba(250, 183, 33,0.9)!important;*/
 
 }
 
@@ -141,7 +188,24 @@ html{
 	height: 2px;
 	background: white;
 }
-/*==========================================*/
+/*===================== BACKGROUNDS =====================*/
+.contact-bg{
+	padding: 7%;
+	background-image: url("../img/chad-peltola.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: top;
+}
+.contact-bg > h3{
+	margin-left: 10vw;
+	letter-spacing: 2px;
+	font-weight: 400 ;
+	color: white;
+	padding: 10px;
+	background-color: var(--my-main-color);
+}
+
 .carousel-calendar-bg{
 	background-image: url("../img/january.jpg");
 	background-repeat: no-repeat;
@@ -164,8 +228,9 @@ html{
 	margin-left: 10vw;
 	letter-spacing: 2px;
 	font-weight: 400 ;
+	color: white;
 	padding: 10px;
-	background-color: rgb(250, 183, 33);
+	background-color: var(--my-main-color);
 }
 
 .guide-bg{
@@ -187,8 +252,9 @@ color: white;
 	margin-left: 10vw;
 	letter-spacing: 2px;
 	font-weight: 400 ;
+	color: white;
 	padding: 10px;
-	background-color: rgb(250, 183, 33);
+	background-color: var(--my-main-color);
 }
 
 .bg{
@@ -204,54 +270,19 @@ color: white;
 	/*color: transparent!important;*/
 	opacity: 0;
 }
-/*.sliding-line2:before{*/
-/*	content: "";*/
-/*	display: block;*/
-/*	height: 100%;*/
-/*	width: 2px;*/
-/*	background: red;*/
-/*	transition: height 0.3s;*/
-/*}*/
 
-/*.nav-item > .nav-link {*/
-/*    padding-top: 20px ;*/
-/*    padding-bottom: 20px ;*/
-/*}*/
-
-/*.my-item{*/
-/*    background: linear-gradient(to left, transparent 50%, red 50%) right;*/
-/*    background-size: 200%;*/
-/*    transition: .2s ease-in;*/
-/*    */
-/*}*/
-
-/*.nav-item:hover{*/
-/*	border-bottom: 2px white solid;*/
-/*	transition: .2s linear;*/
-/*}*/
-
-
-
-/*.nav-item:hover > .nav-link{*/
-/*	 color: white!important;*/
-/*	 transition: .2s ease-in;*/
-/* }*/
-
-
-
-/*.my-active > .nav-link{*/
-/*     color: black!important;*/
-/*}*/
 /*------------------ CALENDAR TABLE ------------------*/
 
-tr:nth-child(odd) {
-	background: rgba(20,50,100,0.2);
-}
+/*tr:nth-child(odd) {*/
+/*	background: rgba(20,50,100,0.2);*/
+/*}*/
 th{
 	padding: 2rem;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	font-size: 20px;
+	border-bottom: var(--my-main-color) solid 15px;
+
 }
 th:nth-child(1){
 	text-align: center!important;
@@ -260,27 +291,20 @@ th:nth-child(4){
 	text-align: center!important;
 }
 td{
-	padding: 2rem;
+	padding: 1.2rem;
 	transition: 0.2s linear;
 	font-size: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+
 }
-tr{
-	border-bottom: rgb(250, 183, 33) solid 15px;
-}
-/*tr td:first-child {*/
-/*	!*font-weight: 800;*!*/
-/*}*/
 
 tr:hover  td{
-	background-color: #ffee99;
+	background-color:   #f4f0f0;
 	cursor: pointer;
+	color:  var(--my-link-color)
 	/*font-size: 25px;*/
 }
 
-.isaffected {
-	background-color: #ffee99!important;
-
-}
 /*------------------ COUNTER ------------------*/
 .counter-bg{
 	width: 100%;
@@ -298,7 +322,7 @@ tr:hover  td{
 #triangle {
 	/* THIS IS THE MAGIC: using the directional keywords instead
 	   of an angle in the linear gradient property*/
-	background-image: linear-gradient(to left top, #ffee99 0%, #ffee99 50%, transparent 50%);
+	background-image: linear-gradient(to left top,var(--my-secondary-color) 0%, var(--my-secondary-color) 50%, transparent 50%);
 	position: relative;
 	width: 100%;
 	height: 100px;
@@ -309,7 +333,7 @@ tr:hover  td{
 #square2 {
 	width: 100%;
 	/*height: 400px;*/
-	background: #ffee99;
+	background: var(--my-secondary-color);
 }
 
 .col-foo{
@@ -323,7 +347,7 @@ tr:hover  td{
 
 }
 .col-foo:hover{
-	background-color: rgba(250, 183, 33, 1);
+	background-color: var(--my-main-color);
 	color: white;
 	text-decoration: none;
 	font-size: 150%;
@@ -339,7 +363,7 @@ tr:hover  td{
 
 .socila-foo:hover{
 	text-decoration: none;
-	background-color: rgba(250, 183, 33, 1);
+	background-color: var(--my-main-color);
 	color: white;
 	font-size: 150%;
 	font-weight: 600;
@@ -376,7 +400,7 @@ tr:hover  td{
 }
 
 #scroll-top:hover > #glupost{
-	color: rgb(250, 183, 33)!important; ;
+	color: var(--my-main-color)!important; ;
 }
 
 #glupost > .fas{
@@ -397,7 +421,7 @@ tr:hover  td{
 
 	/*position: relative;*/
 	/*display: block;*/
-	background-color: rgb(250, 183, 33)!important;
+	background-color: var(--my-main-color)!important;
 	transition:ease-in-out  0.2s !important;
 
 

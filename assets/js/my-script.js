@@ -1,42 +1,11 @@
-// <!-------------------- ACTIVATION OF TABLE (CALENDAR PAGE) ------------------>
-// kad ubacim dinamicki, za id stavljam jedinstveni id putovanja a ne ovaj demo
-
-function columnClick(selected){
-	let element = selected;
-	let colls = document.querySelectorAll('[data-my-colapse="iscolapsed"]');
-
-	if(!element.classList.contains('isaffected')){
-		element.classList.add('isaffected');
-		// console.log('element nema klas')
-	}else{
-		element.classList.remove('isaffected');
-
-	}
-	
-	for(let coll of colls ){
-		if (coll.getAttribute('id') !== element.getAttribute('id')) {
-			coll.setAttribute('aria-expanded', 'false');
-			coll.classList.add('collapsed');
-			coll.classList.remove('isaffected');
-
-			let atribut = coll.getAttribute('href').slice(1);
-			let novi  = document.getElementById(atribut);
-			novi.classList.remove('show');
-			// console.log(novi);
-		}
-
-	}
-	
-	// console.log(colls);
+$(document).ready(function () {
+	$(".clickable-row").click(function () {
+		window.location = $(this).data("href");
+	})
+})
 
 
-	// if (element.classList.contains('isaffected')){
-	// 	element.classList.remove('isaffected');
-	// }else {
-	// 	element.classList.add('isaffected');
-	//
-	// }
-}
+
 // <!-------------------- SCROLL TO TOP ------------------>
 
 $(document).scroll(function () {

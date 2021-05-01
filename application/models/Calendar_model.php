@@ -19,6 +19,7 @@
 //				$query = $this->db->get('travels');
 				return $query->result_array();
 			}
+
 			$query = $this->db->get_where('travels', array('id' => $id));
 			return $query->row_array();
 		}

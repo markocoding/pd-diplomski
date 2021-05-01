@@ -21,6 +21,7 @@
 	</head>
     <body >
     <nav class="navbar navbar-expand-lg navbar-dark my-navbar " id="navbar"  >
+		<div class="container">
 
       <a href="<?php echo site_url()?>">
         <img id="logo" src="<?php echo site_url();?>/assets/img/logo/logo1.png" class="img img-responsive pr-3" >
@@ -42,7 +43,7 @@
             <a class="nav-link" href="<?php echo site_url()?>calendar">Kalendar aktivnosti</a>
           </li>
           <li class="nav-item my-item" id="contact">
-              <a class="nav-link" href="<?php echo site_url()?>contact">Kontakt</a>
+              <a class="nav-link" href="<?php echo site_url()?>contacts">Kontakt</a>
           </li>
           <li class="nav-item my-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Članstvo</a>
@@ -56,6 +57,6 @@
           </li>
         </ul>
       </div>
-
+		</div>
     </nav>
 		<span id="section1"></span>

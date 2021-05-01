@@ -153,14 +153,14 @@ sup {
 }
 
 a {
-	color: #007bff;
+	color: rgba(0, 0, 0, 1);
 	text-decoration: none;
 	background-color: transparent;
 }
 
 a:hover {
-	color: #0056b3;
-	text-decoration: underline;
+	color: rgba(0, 0, 0, 0.5);
+	/*text-decoration: underline;*/
 }
 
 a:not([href]):not([class]) {
@@ -4710,6 +4710,10 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-nav .nav-link {
 	color: rgba(255, 255, 255, 0.5);
+	padding-right: 20px;
+	padding-left: 20px;
+
+
 
 
 }

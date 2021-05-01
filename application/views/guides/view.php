@@ -8,7 +8,7 @@
 <div class="container mt-5"  >
 	<div class="row mb-5 " data-animate="off" data-animate-type="animate__fadeInUp">
 		<div class="col-xl-3 col-lg-5  col-md-12 ">
-			<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo'])?>" style="max-width: 100%;  border-right: rgb(250, 183, 33) solid 20px ">
+			<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo'])?>" class="guide-img">
 		</div>
 		<div class="col-xl-9 col-lg-7 col-md-12">
 			<h1><?php echo $guide['name']?></h1>
@@ -41,18 +41,15 @@
 				</tr>
 		<?php foreach ($travels as $travel) :?>
 
-				<tr id="<?php echo $travel['id']?>" data-my-colapse="iscolapsed" data-toggle="collapse" href="#collapseExample<?php echo  $i?>"  aria-expanded="false" aria-controls="collapseExample"  onclick="columnClick(this)">
+				<tr id="<?php echo $travel['id']?>" class="clickable-row" data-href="<?php echo site_url('/calendars/'.$travel['id'])?>"	>
 					<td  style="font-family: 'Lato', sans-serif;letter-spacing: 2px; text-align: center"> <?php echo substr($travel['date'], -5)?></td>
-					<td style="width: 70%;transition: 0.2s linear;"><?php echo $travel['heading']?>
-						<div class="collapse" id="collapseExample<?php echo  $i?>">
-							<hr><?php echo wordwrap( word_limiter($travel['body'], 20), 100,"<br>", false); ?>
-							<br>
-							<a href="" >POGLEDAJ VIŠE</a>
-						</div>
-					</td>
+					<td style="width: 60%;transition: 0.2s linear;"> <?php echo $travel['heading']?>
+
 					<td><?php echo $guide['name']; $i++?></td>
 					<td><img src="<?php echo site_url('assets/img/difficulty/'.$travel['difficulty'].'_level.png')?>" style="max-height: 40px"></td>
 				</tr>
+
+
 
 		<?php endforeach;?>
 			</table>

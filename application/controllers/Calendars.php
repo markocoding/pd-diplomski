@@ -14,9 +14,9 @@ class Calendars extends CI_Controller{
 	}
 
 	public function view($id){
-
-
 		$data['travels'] = $this->calendar_model->get_travels($id);
+		$data['guide'] = $this->guide_model->get_guide_from_travel($id);
+
 
 		if (empty($data['travels'])){
 			show_404();

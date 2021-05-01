@@ -19,7 +19,7 @@
 
 		<div class="row mt-5 " data-animate="off" data-animate-type="animate__fadeInUp">
 			<div class="col-xl-3 col-lg-5  col-md-12 ">
-				<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo'])?>" style="max-width: 100%;  border-right: rgb(250, 183, 33) solid 20px ">
+				<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo'])?>" class="guide-img" >
 			</div>
 			<div class="col-xl-9 col-lg-7 col-md-12">
 				<h1><?php echo $guide['name']?></h1>
@@ -30,9 +30,14 @@
 					<b>e-mail:</b>
 				<a href=""  class="col-foo" ><?php echo $guide['mail']?></a></p>
 				<hr>
-				<h5><?php echo $guide['bio']?></h5>
-				<br><br>
-				<a href="<?php echo site_url('/guides/'.$guide['slug'])?>">TODO: LINK KA SVIM TURAMA</a>
+				<h5><?php echo word_limiter($guide['bio'], 1000)?></h5>
+
+				<h5 class=" mt-5">
+					<a href="<?php echo site_url('/guides/'.$guide['slug'])?>" class="my-btn">pogledaj sve ture </a>
+				</h5>
+
+
+
 			</div>
 <!--			<div class="col-md-3">-->
 <!--				-->

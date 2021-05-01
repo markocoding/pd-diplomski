@@ -31,7 +31,7 @@
 						<div class="col align-self-center text-center">
 							<a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true">
-							<h1 class="m-0 p-0"><i class="fas fa-chevron-left " style="color: red; padding: 40px; padding-top: 100%; padding-bottom: 100%;"></i></h1>
+							<h1 class="m-0 p-0"><i class="fas fa-chevron-left " style="color: var(--my-link-color); padding: 40px; padding-top: 100%; padding-bottom: 100%;"></i></h1>
 							</span>
 								<span class="sr-only">Previous</span>
 							</a>
@@ -44,14 +44,14 @@
 						<div class="col align-self-center text-center " >
 							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 							<span class="carousel-control-prev-icon" aria-hidden="true">
-							<h1 class="m-0 p-0"><i class="fas fa-chevron-right " style="color: red; padding: 40px; padding-top: 100%; padding-bottom: 100%;"></i></h1>
+							<h1 class="m-0 p-0"><i class="fas fa-chevron-right " style="color: var(--my-link-color); padding: 40px; padding-top: 100%; padding-bottom: 100%;"></i></h1>
 							</span>
 								<span class="sr-only">Next</span>
 							</a>
 						</div>
 					</div>
 
-					<div style="align-content: center">
+					<div class="table-responsive-md" style="align-content: center">
 						<table class="my-table" style="width:100%">
 							<tr>
 								<th>datum</th>
@@ -62,19 +62,17 @@
 							</tr>
 							<?php foreach ($travels as $travel) :?>
 							<?php if (substr($travel['date'], -5,2) === array_search($mesec, $meseci)):?>
-								<tr id="<?php echo $travel['id']?>" data-my-colapse="iscolapsed" data-toggle="collapse" href="#collapseExample<?php echo  $i?>"  aria-expanded="false" aria-controls="collapseExample"  onclick="columnClick(this)">
-									<td  style="font-family: 'Lato', sans-serif;letter-spacing: 2px; text-align: center"> <?php echo substr($travel['date'], -5)?></td>
-									<td style="width: 60%;transition: 0.2s linear;"><?php echo $travel['heading']?>
-										<div class="collapse" id="collapseExample<?php echo  $i?>">
-											<hr><?php echo wordwrap( word_limiter($travel['body'], 20), 100,"<br>", false); ?>
-											<br>
-											<a href="<?php echo site_url('/calendars/'.$travel['id'])?>" >POGLEDAJ VIŠE</a>
-										</div>
-									</td>
-									<td><?php echo $travel['name']?></td>
-									<td><img src="<?php echo site_url('assets/img/difficulty/'.$travel['difficulty'].'_level.png')?>" style="max-height: 40px"></td>
 
-								</tr>
+										<tr id="<?php echo $travel['id']?>" class="clickable-row" data-href="<?php echo site_url('/calendars/'.$travel['id'])?>"  >
+
+											<td  style="font-family: 'Lato', sans-serif;letter-spacing: 2px; text-align: center"><?php echo substr($travel['date'], -5)?></td>
+											<td style="width: 60%;transition: 0.2s linear;"> <?php echo $travel['heading']?></a>
+											</td>
+											<td><?php echo $travel['name']?></td>
+											<td><img src="<?php echo site_url('assets/img/difficulty/'.$travel['difficulty'].'_level.png')?>" style="max-height: 40px"></td>
+
+										</tr>
+
 							<?php endif; $i++?>
 							<?php endforeach;?>
 
