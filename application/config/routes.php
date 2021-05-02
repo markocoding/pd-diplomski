@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['contacts'] = 'contacts/contact';
+$route['contact'] = 'contacts/contact';
 $route['calendars/(:any)'] = 'calendars/view/$1';
 $route['guides/(:any)'] = 'guides/view/$1';
 $route['calendar'] = 'calendars/index';

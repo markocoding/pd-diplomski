@@ -8,7 +8,7 @@
 :root {
 	--my-main-color: rgba(0, 117, 143, 0.8);
 	--my-link-color: #fab721;
-	--my-secondary-color: #e4dbd9;
+	--my-secondary-color: #f7f9fa;
 
 
 }
@@ -21,6 +21,7 @@ html{
 ::selection {
 	background: var(--my-link-color);
 }
+
 
 
 /*------------------ SCROLL ANMIATION ------------------*/
@@ -128,7 +129,16 @@ html{
 
 
 }
+/*------------------ CONTACT ------------------*/
+.my-download{
+	font-size: 3.2rem;
+	transition: 0.2s ease-in-out
+}
 
+.my-download:hover{
+	color: var(--my-link-color);
+	
+}
 
 /*------------------ NAVIGATION ------------------*/
 
@@ -299,7 +309,7 @@ td{
 }
 
 tr:hover  td{
-	background-color:   #f4f0f0;
+	background-color:   var(--my-secondary-color);
 	cursor: pointer;
 	color:  var(--my-link-color)
 	/*font-size: 25px;*/
@@ -404,9 +414,9 @@ tr:hover  td{
 }
 
 #glupost > .fas{
-	border-radius: 10px;
+	border-radius: 2px;
 	padding: 10px;
-	background-color: rgba(10, 20 ,50, 0.2);
+	background-color: rgba(230, 233, 235,0.5);
 	bottom: 20px;
 	left: 0;
 	position: relative;
