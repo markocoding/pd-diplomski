@@ -1,3 +1,8 @@
+
+
+
+// <!-------------------- WTF IS THIS ------------------>
+
 $(document).ready(function () {
 	$(".clickable-row").click(function () {
 		window.location = $(this).data("href");
@@ -183,14 +188,21 @@ $(document).ready(function () {
 //              console.log(res.length);
 });
 
-//<!-------------------- FORECAST WIDGET ------------------>
+// <!-------------------- GALLERY GSAP ------------------>
 
-! function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (!d.getElementById(id)) {
-		js = d.createElement(s);
-		js.id = id;
-		js.src = 'https://weatherwidget.io/js/widget.min.js';
-		fjs.parentNode.insertBefore(js, fjs);
+gsap.registerPlugin(ScrollTrigger);
+
+let container = document.getElementById("container_gsap");
+
+gsap.to(container, {
+	x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+	ease: "none",
+	scrollTrigger: {
+		trigger: container,
+		invalidateOnRefresh: true,
+		pin: true,
+		scrub: 1.2,
+		markers:true,
+		end: () => "+=" + container.offsetWidth
 	}
-}(document, 'script', 'weatherwidget-io-js');
+});

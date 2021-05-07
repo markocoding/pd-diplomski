@@ -45,6 +45,9 @@
 				<li class="nav-item my-item" id="contact">
 					<a class="nav-link" href="<?php echo site_url()?>contact">Kontakt</a>
 				</li>
+				<li class="nav-item my-item" id="gear">
+					<a class="nav-link" href="<?php echo site_url()?>gallery">Galerija</a>
+				</li>
 				<li class="nav-item my-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Članstvo</a>
 					<div class="dropdown-menu dropdown-menu-right">
