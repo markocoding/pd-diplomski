@@ -47,7 +47,7 @@
 
 	<section class="mb-5">
 		<div class="row text-center "  >
-			<div data-animate="off" data-animate-type="animate__fadeInUpBig"  class="d-none d-lg-block col-lg-3 counter-bg p-0" style="margin-right: 50px; height: 90vh; border-right: var(--my-main-color) solid 20px ">
+			<div data-animate="off" data-animate-type="animate__fadeInUpBig"  class="d-none d-lg-block col-lg-3 counter-bg p-0" style="margin-right: 50px; height: 90vh; border-right: var(--my-main-color)			 solid 20px ">
 				<div   style="padding-top: 10%;padding-bottom: 20%;
 				 /*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7203081916360294) 48%, rgba(0,0,0,0.798739564185049) 100%);*/
 				 /*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(50,168,82,0.7343137938769257) 48%, rgba(50,168,82,0.6250700963979341) 100%);*/
@@ -76,19 +76,10 @@
 <!--				ANIMATED ARROW-->
 				<h3>
 					<div data-animate="off"  data-animate-type="animate__fadeInRight" class=' vla '   >
-						<a class='animated-arrow' href='<?php echo site_url()?>calendar'>
-								<span class='the-arrow -left'>
-								  <span class='shaft'></span>
-								</span>
-							<span class='main'>
-								  <span class='text'>
-									još ekspedicija
-								  </span>
-								  <span class='the-arrow -right'>
-									<span class='shaft'></span>
-								  </span>
-							</span>
-						</a>
+						<h5 >
+							<a  href='<?php echo site_url()?>calendar' class="my-btn">pogledaj sve ture </a>
+						</h5>
+
 					</div>
 				</h3>
 

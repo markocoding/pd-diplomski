@@ -137,7 +137,7 @@ html{
 
 .my-download:hover{
 	color: var(--my-link-color);
-	
+
 }
 
 /*------------------ NAVIGATION ------------------*/
@@ -199,6 +199,33 @@ html{
 	background: white;
 }
 /*===================== BACKGROUNDS =====================*/
+
+.gear-bg{
+	padding: 7%;
+	background-image: url("../img/gear.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+.gear-bg > h2{
+	font-weight: 400 ;
+	color: white;
+}
+.gear-bg > h1{
+	color: white;
+}
+.gear-bg > h3{
+	margin-left: 10vw;
+	letter-spacing: 2px;
+	font-weight: 400 ;
+	color: white;
+	padding: 10px;
+	background-color: var(--my-main-color);
+}
+
+
+
 .contact-bg{
 	padding: 7%;
 	background-image: url("../img/chad-peltola.jpg");

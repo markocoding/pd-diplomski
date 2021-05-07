@@ -1,18 +1,16 @@
 <div class="contact-bg animate__animated animate__fadeInRight" >
 	<div class="container">
-		<div class="row">
-			<div class="col-md-6" style="color: white">
+
+			<div  style="color: white">
 				<h2 class="display-1 " style="font-weight: 400;">Uspon je </h2>
 				<h1 class="display-2 pl-2 pb-2 " style="margin-left: 200px; letter-spacing: 2px;">svuda gde su</h1>
 				<h3 class="display-2 " style=";font-weight: 400;color: white; letter-spacing: 2px;  background-color:var(--my-main-color)"> naši članovi!</h3>
 
 
 				
-			</div>
-			<div class="col-md-6">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11330.453012488197!2d20.4800159!3d44.7683016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd12e2aad5590e385!2sThe%20School%20of%20Electrical%20and%20Computer%20Engineering%20of%20Applied%20Studies!5e0!3m2!1sen!2srs!4v1619890299284!5m2!1sen!2srs" 
-			 style="border:0;width: 100%;height: 500px" allowfullscreen="" loading="lazy"></iframe>
-			</div>
+
+
+
 		</div>
 	</div>
 </div>
@@ -32,6 +30,36 @@
 
 
 			<hr>
+
+			<?php foreach($guides as $guide):?>
+				<?php if($guide['position'] === "predsednica društva" || $guide['position'] === "načelnik društva"):?>
+
+					<h4><b><?php echo $guide['position'] ?>:</b></h4>
+					<h5>
+						<?php echo $guide['name'] ?><br>
+						Telefon:         <span class="pl-5">+381(0) <?php echo $guide['number']?></span><br>
+						Email:            <span class="pl-5"><?php echo $guide['mail']?></span>
+					</h5><br>
+
+				<?php endif;?>
+			<?php endforeach;?>
+
+
+			<h4><b>PD Uspon:</b></h4>
+			<h5 >
+				Vojvode Stepe 283<br>
+				Voždovac<br>
+				Beograd 11000</h5>
+			<br>
+			<h5>
+				Matični broj:  28706570<br>
+				PIB:               110122845<br>
+				Broj računa:   885-249638-31 (Komercijalna banka)<br>
+				Email:            pduspon2021@uspon.rs<br>
+				Website:         pduspon.org.rs<br>
+			</h5>
+			<hr>
+
 			<h2 >
 			Ukoliko imate neko pitanje, sugestiju ili primedbu </h2>
 			<h2 class="p-2" style=";font-weight: 400;color: white; letter-spacing: 1px;  background-color:var(--my-main-color)">kontaktirajte nas elektronskom poštom.</h2>
@@ -63,35 +91,10 @@
 			
 		</div>
 		<div class="col-md-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11330.453012488197!2d20.4800159!3d44.7683016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd12e2aad5590e385!2sThe%20School%20of%20Electrical%20and%20Computer%20Engineering%20of%20Applied%20Studies!5e0!3m2!1sen!2srs!4v1619890299284!5m2!1sen!2srs"
+					style="border:0;width: 100%;height: 500px" allowfullscreen="" loading="lazy"></iframe>
 
-			<?php foreach($guides as $guide):?>
-				<?php if($guide['position'] === "predsednica društva" || $guide['position'] === "načelnik društva"):?>
-					
-					<h4><b><?php echo $guide['position'] ?>:</b></h4>
-				<h5>
-					<?php echo $guide['name'] ?><br>
-					Telefon:         <span class="pl-5">+381(0) <?php echo $guide['number']?></span><br>
-					Email:            <span class="pl-5"><?php echo $guide['mail']?></span>
-				</h5><br>
 
-				<?php endif;?>
-			<?php endforeach;?>
-			
-
-			<h4><b>PD Uspon:</b></h4>
-			<h5 >
-			Vojvode Stepe 283<br>
-			Voždovac<br>
-			Beograd 11000</h5>
-			<br>
-			<h5>
-			Matični broj:  28706570<br>
-			PIB:               110122845<br>
-			Broj računa:   885-249638-31 (Komercijalna banka)<br>
-			Email:            pduspon2021@uspon.rs<br>
-			Website:         pduspon.org.rs<br>
-		</h5>
-	
 	
 	</div>
 </div>
