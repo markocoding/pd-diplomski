@@ -3,33 +3,36 @@
 	<h1 class="display-2 " >sa našim </h1>
 	<h3 class="display-2 " >licenciranim vodičima!</h3>
 </div>
-<div class="container" >
-	<div id="container_gsap" >
 
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/korak-ekipa.jpg"  style="max-width: 100%">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/hiking.jpg"  style="max-width: 100%">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  style="max-width:100%">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/kitera-dent-jWv1ILisuSc-unsplash.jpg"  style="max-width: 100%">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/sdsd.jpg"  style="max-width:100% ">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  style="max-width:100%">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/kitera-dent-jWv1ILisuSc-unsplash.jpg"  style="max-width: 100%">
-		</div>
-		<div class="module " >
-			<img class="mx-5" src="<?php echo site_url()?>assets/img/sdsd.jpg"  style="max-width:100% ">
+	<h1 class="display-1 text-center">2021</h1>
+	<div id="container_gsap" data-gasp >
+		<div class="module y2021" >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/korak-ekipa.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/kitera-dent-jWv1ILisuSc-unsplash.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/sdsd.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  >
 		</div>
 	</div>
-</div>
 
+	<h1 class="display-1 text-center">2020</h1>
+	<div id="container_gsap2020" data-gasp>
+		<div class="module y2020" >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/korak-ekipa.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/kitera-dent-jWv1ILisuSc-unsplash.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/sdsd.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  >
+		</div>
+	</div>
+
+	<h1 class="display-1 text-center">Slike prethodnih godina</h1>
+	<div id="container_gsapAll" data-gasp>
+		<div class="module yAll" >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/korak-ekipa.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/kitera-dent-jWv1ILisuSc-unsplash.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/sdsd.jpg"  >
+			<img class="gallery-img img " src="<?php echo site_url()?>assets/img/caleb-fisher-eZiTbYKgDSs-unsplash.jpg"  >
+		</div>
+	</div>

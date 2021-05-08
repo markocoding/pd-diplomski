@@ -42,7 +42,7 @@ $(document).scroll(function () {
 
 	for (let i = 0; i < elZaAnim.length; i++) {
 		let element = elZaAnim[i];
-		let scroll =  Math.round($(window).scrollTop() + 750) ; // pozicija top ekrana
+		let scroll =  Math.round($(window).scrollTop() + 500) ; // pozicija top ekrana
 		let hieghtThreshold = Math.round($(element).offset().top);
 
 		// console.log("ovo je hieghtThreshold " +hieghtThreshold + " ----ovo je scroll " +scroll)
@@ -180,8 +180,6 @@ $(document).ready(function () {
 
 	if(res.length === 0 || res==='#section1'){
 		$("#savez").addClass(classeToAdd);
-
-
 	}else{
 		$("#"+res).addClass(classeToAdd);
 	}
@@ -190,19 +188,88 @@ $(document).ready(function () {
 
 // <!-------------------- GALLERY GSAP ------------------>
 
-gsap.registerPlugin(ScrollTrigger);
+var matches = document.querySelectorAll("[data-gasp]");
+for (i=0; i < matches.length; i++){
+	let container = matches[i];
+	let module =  matches[i].children[0];
+	let lenghtX = 0;
 
-let container = document.getElementById("container_gsap");
 
-gsap.to(container, {
-	x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-	ease: "none",
-	scrollTrigger: {
-		trigger: container,
-		invalidateOnRefresh: true,
-		pin: true,
-		scrub: 1.2,
-		markers:true,
-		end: () => "+=" + container.offsetWidth
+	if (i % 2){
+		//offset every oder gallery
+		let duzina = module.clientWidth - document.documentElement.clientWidth;
+		module.style.transform = "translate3d(-"+ duzina +"px, 0px, 1px)" ;
+		//change movement direction
+		 lenghtX = (module.clientWidth - document.documentElement.clientWidth) + "px";
+	}else {
+		 lenghtX = -(module.clientWidth - document.documentElement.clientWidth) + "px";
 	}
-});
+
+	console.log(lenghtX);
+
+	gsap.registerPlugin(ScrollTrigger);
+	gsap.to(container, {
+		// x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+		x: () => lenghtX,
+		ease: "none",
+		scrollTrigger: {
+			trigger: container,
+			invalidateOnRefresh: true,
+			pin: true,
+			scrub: 1.2,
+			// markers:true,
+			// end: () => "+=" + container.offsetWidth
+		}
+
+	});
+
+
+}
+
+
+
+//
+//
+// let container = document.getElementById("container_gsap");
+// let module = document.getElementById("module");
+// let lenghtX = -(module.clientWidth - document.documentElement.clientWidth) + "px";
+//
+// gsap.to(container, {
+// 	// x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+// 	x: () => lenghtX,
+// 	ease: "none",
+// 	scrollTrigger: {
+// 		trigger: container,
+// 		invalidateOnRefresh: true,
+// 		pin: true,
+// 		scrub: 1.2,
+// 		// markers:true,
+// 		// end: () => "+=" + container.offsetWidth
+// 	}
+//
+// });
+//
+//
+//
+// let container2020 = document.getElementById("container_gsap2020");
+// let module2020 = document.getElementById("module2020");
+//
+// let duzina = module2020.clientWidth - document.documentElement.clientWidth;
+// module2020.style.transform = "translate3d(-"+ duzina +"px, 0px, 1px)" ;
+//
+//
+// gsap.to(container2020, {
+// 	// x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+// 	x:  () => (module2020.clientWidth - document.documentElement.clientWidth) + "px",
+// 	ease: "none",
+// 	scrollTrigger: {
+// 		trigger: container2020,
+// 		invalidateOnRefresh: true,
+// 		pin: true,
+// 		scrub: 1.2,
+// 		// markers:true,
+// 		// end: () => "+=" + container.offsetWidth
+// 	}
+//
+// });
+

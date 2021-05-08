@@ -1,16 +1,9 @@
 <div class="contact-bg animate__animated animate__fadeInRight" >
 	<div class="container">
-
-			<div  style="color: white">
-				<h2 class="display-1 " style="font-weight: 400;">Uspon je </h2>
-				<h1 class="display-2 pl-2 pb-2 " style="margin-left: 200px; letter-spacing: 2px;">svuda gde su</h1>
-				<h3 class="display-2 " style=";font-weight: 400;color: white; letter-spacing: 2px;  background-color:var(--my-main-color)"> naši članovi!</h3>
-
-
-				
-
-
-
+		<div  style="color: white">
+			<h2 class="display-1 " style="font-weight: 400;">Uspon je </h2>
+			<h1 class="display-2 pl-2 pb-2 " style="margin-left: 200px; letter-spacing: 2px;">svuda gde su</h1>
+			<h3 class="display-2 " style=";font-weight: 400;color: white; letter-spacing: 2px;  background-color:var(--my-main-color)"> naši članovi!</h3>
 		</div>
 	</div>
 </div>

@@ -1,12 +1,10 @@
-<div class="guide-bg animate__animated animate__fadeInRight" >
-	<h2 class="display-1 " >Upoznajte se </h2>
-	<h1 class="display-2 " >sa našim </h1>
-	<h3 class="display-2 " >licenciranim vodičima!</h3>
+<div class="guide-bg-small " >
+
 </div>
 
 
 <div class="container mt-5"  >
-	<div class="row mb-5 " data-animate="off" data-animate-type="animate__fadeInUp">
+	<div class="row mb-5 animate__fadeInUp animate__animated" >
 		<div class="col-xl-3 col-lg-5  col-md-12 ">
 			<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo'])?>" class="guide-img">
 		</div>
@@ -29,9 +27,9 @@
 	</div>
 
 	<?php $i = 0?>
-	<h1 class="text-center display-3">Sve avanture</h1>
+	<h1 class="text-center display-3 animate__fadeInUp animate__animated">Sve avanture</h1>
 
-		<div style="align-content: center">
+		<div style="align-content: center" class="animate__fadeInUp animate__animated">
 			<table class="my-table" style="width:100%">
 				<tr>
 					<th>datum</th>

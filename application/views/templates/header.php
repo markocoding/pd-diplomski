@@ -45,7 +45,7 @@
 				<li class="nav-item my-item" id="contact">
 					<a class="nav-link" href="<?php echo site_url()?>contact">Kontakt</a>
 				</li>
-				<li class="nav-item my-item" id="gear">
+				<li class="nav-item my-item" id="gallery">
 					<a class="nav-link" href="<?php echo site_url()?>gallery">Galerija</a>
 				</li>
 				<li class="nav-item my-item dropdown">

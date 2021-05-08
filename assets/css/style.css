@@ -6,10 +6,9 @@
 
 
 :root {
-	--my-main-color: rgba(0, 117, 143, 0.8);
+	--my-main-color: rgba(0, 117, 143, 0.9);
 	--my-link-color: #fab721;
 	--my-secondary-color: #f7f9fa;
-
 
 }
 
@@ -139,9 +138,44 @@ html{
 	height:100vh;
 }
 
+#container_gsap2020 {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	height:100vh;
+}
+
+#container_gsapAll {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	height:100vh;
+}
+
 .module{
 	height:100%;
 	display:flex;
+
+
+}
+
+.y2021{
+	background-color: lightcyan;
+}
+
+.y2020{
+	background-color: lightgoldenrodyellow;
+}
+
+.yAll{
+	background-color: lightgreen;
+}
+
+.gallery-img{
+	padding: 5rem;
+	max-height: 80%;
+	margin: auto;
+	display: block;
 }
 
 
@@ -215,7 +249,101 @@ html{
 	height: 2px;
 	background: white;
 }
+/*===================== GEAR BACKGROUNDS =====================*/
+.gear-home-overlay-1{
+	background-image: url("../img/gear-home/cepin-sm.jpg"), url("../img/gear-home/cepin-sm-blur.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% ;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	transform: scale(1.2);
+	transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+
+
+}
+.gear-home-overlay-2{
+	background-image: url("../img/gear-home/crampons-sm.jpg"), url("../img/gear-home/crampons-sm-blur.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	transform: scale(1.2);
+	transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+
+}
+.gear-home-overlay-3{
+	background-image: url("../img/gear-home/rope-sm.jpg"), url("../img/gear-home/rope-sm-blur.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% ;
+	/*background-attachment: fixed;*/
+	background-position: top;
+	transform: scale(1.2);
+	transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+
+}
+
+.text-to-show{
+	font-size: 6.3rem;
+	letter-spacing: 5px;
+	font-weight: 800;
+	text-align: center;
+	opacity: 0;
+	transform: translate3d(0px, -20px, 0px) ;
+	transition: 0.3s ease-in-out;
+	color: white;
+	-webkit-text-stroke-width: 0.8px;
+	-webkit-text-stroke-color: black;
+
+}
+
+.gear-home-overlay-1:hover  .text-to-show{
+	 opacity: 1;
+	 transform: translate3d(0px, 0px, 0px);
+	 cursor: pointer;
+}
+
+.gear-home-overlay-2:hover  .text-to-show{
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	cursor: pointer;
+}
+
+.gear-home-overlay-3:hover  .text-to-show{
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	cursor: pointer;
+}
+
+.gear-home-overlay-1:hover{
+	transform: scale(1.1);
+	/*filter: blur(3px);*/
+	background-image: url("../img/gear-home/cepin-sm-blur.jpg");
+}
+
+.gear-home-overlay-2:hover{
+	transform: scale(1.1);
+	/*filter: blur(3px);*/
+	background-image: url("../img/gear-home/crampons-sm-blur.jpg");
+}
+
+.gear-home-overlay-3:hover{
+	transform: scale(1.1);
+	/*filter: blur(3px);*/
+	background-image: url("../img/gear-home/rope-sm-blur.jpg");
+}
+
+
 /*===================== BACKGROUNDS =====================*/
+
+.bg{
+	background-image: url("../img/slika3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+
+
 
 .gear-bg{
 	padding: 7%;
@@ -267,7 +395,14 @@ html{
 	/*background-attachment: fixed;*/
 	background-position: center;
 }
-
+.calendar-bg-small{
+	padding: 7%;
+	background-image: url("../img/calendar.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: top;
+}
 
 .calendar-bg{
 	padding: 7%;
@@ -295,6 +430,16 @@ html{
 	/*background-attachment: fixed;*/
 	background-position: center;
 }
+
+.guide-bg-small{
+	padding: 7%;
+	background-image: url("../img/guide.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: top;
+}
+
 .guide-bg > h2{
 	font-weight: 400 ;
 	color: white;
@@ -311,13 +456,6 @@ color: white;
 	background-color: var(--my-main-color);
 }
 
-.bg{
-	background-image: url("../img/slika3.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*background-attachment: fixed;*/
-	background-position: center;
-}
 
 
 [data-animate]{
@@ -325,6 +463,18 @@ color: white;
 	opacity: 0;
 }
 
+
+.gear-bg-home{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/gear_climber.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	padding: 0;
+	margin:0;
+}
 /*------------------ CALENDAR TABLE ------------------*/
 
 /*tr:nth-child(odd) {*/
@@ -362,13 +512,15 @@ tr:hover  td{
 /*------------------ COUNTER ------------------*/
 .counter-bg{
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	background-image: url("../img/holly-mandarich-7MrXw_o7Eo4-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	/*background-attachment: fixed;*/
 	background-position: center;
 	box-shadow:inset 0 0 0 2000px rgba(3, 102, 60,0.1);
+	margin-right: 50px;
+	border-right: var(--my-main-color)solid 20px
 }
 
 /*------------------ FOOTER ------------------*/
@@ -382,6 +534,7 @@ tr:hover  td{
 	height: 100px;
 	bottom: 0;
 	left: 0;
+	z-index: 0;
 }
 
 #square2 {
@@ -492,205 +645,4 @@ tr:hover  td{
 	bottom: 0;
 }
 
-
-
-/*.arrow:hover{*/
-/*	!*width: 100px!important;*!*/
-/*	!*padding: 20px!important;*!*/
-/*	!*transform: rotate(360deg);*!*/
-/*	letter-spacing: 10px;*/
-/*	!*left: 10px!important;*!*/
-/*	color: rgb(250, 183, 33)!important;*/
-
-
-
-/*}*/
-
-/*!*text*!*/
-
-/*.proba:after{*/
-/*	content: "TOP" !important;*/
-/*	position: relative;*/
-/*	bottom: 17px;*/
-/*	left: -70px;*/
-/*	font-size: 22px;*/
-/*	!*transform: rotate(-90deg)!important;*!*/
-
-/*}*/
-
-/*!*arrow*!*/
-
-/*.arrow {*/
-/*	background: black;*/
-/*	height: 1px;*/
-/*	width: 100px;*/
-/*	!*margin: 0 auto;*!*/
-/*	position: relative;*/
-/*	cursor: pointer;*/
-/*	bottom: 500px;*/
-/*	transform: rotate(-90deg);*/
-/*	transition:ease-in-out  0.2s !important;*/
-/*	!*transform: scale(1.1);*!*/
-/*}*/
-
-/*.arrow:before, .arrow:after {*/
-/*	content: "";*/
-/*	background:black;*/
-/*	position: absolute;*/
-/*	height: 1px;*/
-/*	width: 20px;*/
-/*}*/
-/*.arrow:before {*/
-/*	right: -3px;*/
-/*	bottom: -6px;*/
-/*	transform: rotate(-45deg);*/
-/*}*/
-/*.arrow:after {*/
-/*	right: -3px;*/
-/*	top: -7px;*/
-/*	transform: rotate(45deg);*/
-
-/*}*/
-/*------------------ ARROW ANIMATION ------------------*/
-
-
-
-.vla {
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	margin-left: 100px;
-	margin-top: 15%;
-
-}
-
-
-.the-arrow {
-	width: 64px;
-	transition: all 0.2s;
-}
-.the-arrow.-left {
-	position: absolute;
-	top: 60%;
-	left: 0;
-}
-.the-arrow.-left > .shaft {
-	width: 0;
-	background-color: black;
-}
-.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
-	width: 0;
-	background-color: black;
-}
-.the-arrow.-left > .shaft:before {
-	transform: rotate(0);
-}
-.the-arrow.-left > .shaft:after {
-	transform: rotate(0);
-}
-.the-arrow.-right {
-	top: 3px;
-}
-.the-arrow.-right > .shaft {
-	width: 64px;
-	transition-delay: 0.2s;
-}
-.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
-	width: 8px;
-	transition-delay: 0.3s;
-	transition: all 0.5s;
-}
-.the-arrow.-right > .shaft:before {
-	transform: rotate(40deg);
-}
-.the-arrow.-right > .shaft:after {
-	transform: rotate(-40deg);
-}
-.the-arrow > .shaft {
-	background-color: black;
-	display: block;
-	height: 1px;
-	position: relative;
-	transition: all 0.2s;
-	/*transition-delay: 0;*/
-	will-change: transform;
-}
-.the-arrow > .shaft:before, .the-arrow > .shaft:after {
-	background-color: black;
-	content: "";
-	display: block;
-	height: 1px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	transition: all 0.2s;
-	/*transition-delay: 0;*/
-}
-.the-arrow > .shaft:before {
-	transform-origin: top right;
-}
-.the-arrow > .shaft:after {
-	transform-origin: bottom right;
-}
-
-.animated-arrow {
-	display: inline-block;
-	color: black;
-	font-size: 1.25em;
-	font-style: italic;
-	text-decoration: none;
-	position: relative;
-	transition: all 0.2s;
-}
-.animated-arrow:hover {
-	color: rgb(250, 183, 33);
-	text-decoration: none;
-}
-.animated-arrow:hover > .the-arrow.-left > .shaft {
-	width: 64px;
-	transition-delay: 0.1s;
-	background-color: rgb(250, 183, 33);
-}
-.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
-	width: 8px;
-	transition-delay: 0.1s;
-	background-color: rgb(250, 183, 33);
-}
-.animated-arrow:hover > .the-arrow.-left > .shaft:before {
-	transform: rotate(40deg);
-}
-.animated-arrow:hover > .the-arrow.-left > .shaft:after {
-	transform: rotate(-40deg);
-}
-.animated-arrow:hover > .main {
-	transform: translateX(80px);
-}
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
-	width: 0;
-	transform: translateX(200%);
-	/*transition-delay: 0;*/
-}
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-	width: 0;
-	/*transition-delay: 0;*/
-	transition: all 0.1s;
-}
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
-	transform: rotate(0);
-}
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-	transform: rotate(0);
-}
-.animated-arrow > .main {
-	display: flex;
-	align-items: center;
-	transition: all 0.2s;
-}
-.animated-arrow > .main > .text {
-	margin: 0 16px 0 0;
-	line-height: 1;
-}
-.animated-arrow > .main > .the-arrow {
-	position: relative;
-}
 

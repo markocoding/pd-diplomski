@@ -1,12 +1,13 @@
 
 
-<div class="bg animate__animated animate__fadeInRight">
+<div class="bg animate__animated animate__fadeIn">
 	<div class="m-auto "  style="padding-top: 30vh;padding-bottom:20vh;text-align: center">
-		<section class="animate__animated ">
-			<img class="img " src="<?php echo site_url()?>assets/img/logo/logo5.png" style="max-width: 100px" >
-			<h3 >Svaki uspon je težak</h3></section>
+		<section >
+			<img class="img animate__animated animate__fadeInUp" src="<?php echo site_url()?>assets/img/logo/logo5.png" style="max-width: 100px" >
+			<h3 class="animate__animated animate__fadeInUp animate__delay-1s">Svaki uspon je težak</h3>
+		</section>
 
-		<h1 class=" display-4"> <b>ali kad si u dobrom društvu <br>svaka prepreka je manja.</b></h1>
+		<h1 class=" display-4 animate__animated animate__fadeInUp animate__delay-2s"> <b>ali kad si u dobrom društvu <br>svaka prepreka je manja.</b></h1>
 
 		<span class="scroll" ></span>
 
@@ -14,12 +15,6 @@
 </div>
 
 <div class="container " > <!-- ako se dira p/m containera mora i row jer su povezani po difoltu  -->
-<!--	<section class="mx-auto text-center" style="margin-top: 50px">-->
-<!--		<h3 >Dobrodošli u društvo planinara "KORAK"</h3>-->
-<!--		<h1 ><b>Svako sa dve ruke i noge je dobrodosao!<b></h1>-->
-<!---->
-<!--		-->
-<!--	</section>-->
 
 	<div class="row" style=" margin-top: 10rem;margin-bottom: 10rem">
 		<div class="col-lg-6 col-md-12">
@@ -33,26 +28,15 @@
 			</h5>
 		</div>
 		<div class="col-lg-6 col-md-12">
-
-<!--			<img src="--><?php //echo site_url()?><!--assets/img/korak-ekipa.jpg" style="width: 100%" class="img">-->
-
 			<img  data-animate="off" data-animate-type="animate__fadeInRightBig"   class="img py-5" src="<?php echo site_url()?>assets/img/korak-ekipa.jpg" style="width: 100%" >
-
-
 		</div>
 	</div>
 
-
-
-
 	<section class="mb-5">
 		<div class="row text-center "  >
-			<div data-animate="off" data-animate-type="animate__fadeInUpBig"  class="d-none d-lg-block col-lg-3 counter-bg p-0" style="margin-right: 50px; height: 90vh; border-right: var(--my-main-color)			 solid 20px ">
-				<div   style="padding-top: 10%;padding-bottom: 20%;
-				 /*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7203081916360294) 48%, rgba(0,0,0,0.798739564185049) 100%);*/
-				 /*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(50,168,82,0.7343137938769257) 48%, rgba(50,168,82,0.6250700963979341) 100%);*/
-				 background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.633473457742472) 48%, rgba(255,255,255,0.675490264465161) 100%);
-					">
+			<div data-animate="off" data-animate-type="animate__fadeInUpBig"  class="d-none d-lg-block col-lg-3 counter-bg p-0" >
+				<div style="padding-top: 10%;padding-bottom: 20%;
+				 background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.633473457742472) 48%, rgba(255,255,255,0.675490264465161) 100%);">
 					<h1 class="display-2"><i class="fas fa-hiking"></i></h1>
 					<h1 class="display-2 counter" id="numbers" data-count="150" >0</h1>
 					<h2>uspešnih ekspedicija</h2>
@@ -70,22 +54,62 @@
 						opredeliti da postanete visokogorac, alpinista, planinski vodič, sportski penjač, speleolog-planinar, gorski spasilac, orjentirac i još mnogo toga.</b>
 					<br><br>
 					Planinarski klubovi/društva pripremaju godišnje programe planinarskih aktivnosti za svaku godinu sa raznovrsnim sadržajima akcija, uspona, planinarskih takmičenja, u zemlji i inostanstvu.
-
-					<br><br>
+					<br><br><br>
+					<a  href='<?php echo site_url()?>calendar' class="my-btn">pogledaj sve ture </a>
 				</h5>
-<!--				ANIMATED ARROW-->
-				<h3>
-					<div data-animate="off"  data-animate-type="animate__fadeInRight" class=' vla '   >
-						<h5 >
-							<a  href='<?php echo site_url()?>calendar' class="my-btn">pogledaj sve ture </a>
-						</h5>
-
-					</div>
-				</h3>
 
 			</div>
 		</div>
 	</section>
+
+	<div class="row " style=" margin-top: 10rem">
+<!--		<div class="gear-bg-home">-->
+<!--		</div>-->
+		<div class="col-12" >
+			<h2 data-animate="off" data-animate-type="animate__fadeInRight" class="display-2 " style="font-weight: 400;">Kod nas možeš </h2>
+			<h1 data-animate="off" data-animate-type="animate__fadeInRight" class="display-3 pl-2 pb-2 " style="margin-left: 200px; letter-spacing: 2px;">da pronđeš</h1>
+			<h3 data-animate="off" data-animate-type="animate__fadeInRight" class="display-3 " style=";font-weight: 400;color: white; letter-spacing: 2px;  background-color:var(--my-main-color)"> svu opremu  koja ti je potrebna!</h3>
+			<br>
+		</div>
+
+		<div style="margin-bottom: 2rem;max-height: 180px; width: 100%; overflow: hidden;" data-animate="off" data-animate-type="animate__fadeInUp">
+			<a href="<?php echo site_url()?>gear">
+				<div class="gear-home-overlay-1 gear-home-overlay" style="height: 225px;">
+					<div class="text-to-show">
+						cepin
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div style="margin-bottom: 2rem;max-height: 180px; width: 100%; overflow: hidden;" data-animate="off" data-animate-type="animate__fadeInUp">
+			<a href="<?php echo site_url()?>gear">
+				<div class="gear-home-overlay-2 gear-home-overlay" style="height: 225px;">
+					<div class="text-to-show">
+						dereze
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div style="margin-bottom: 2rem;max-height: 180px; width: 100%; overflow: hidden;" data-animate="off" data-animate-type="animate__fadeInUp">
+			<a href="<?php echo site_url()?>gear">
+				<div class="gear-home-overlay-3 gear-home-overlay" style="height: 225px;">
+					<div class="text-to-show">
+						užad
+					</div>
+				</div>
+			</a>
+		</div>
+
+
+
+	</div >
+
+
+</div>
+
+
 
 
 <!--	<section style="min-height: 95vh">-->
@@ -104,13 +128,3 @@
 <!--		</div>-->
 <!--	</div>-->
 <!--	</section>-->
-
-
-
-
-
-
-</div>
-
-
-
