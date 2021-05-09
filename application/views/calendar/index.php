@@ -89,14 +89,13 @@
 
 	</div>
 	<h5 class="mt-5"><b>napor*</b></h5>
-<div class="row">
-	<p class="p-3">nizak nivo napora - <img src="<?php echo site_url('assets/img/difficulty/1_level.png')?>" style="max-height: 20px">
-	</p>
-	<p class="p-3">srednji nivo napora - <img src="<?php echo site_url('assets/img/difficulty/2_level.png')?>" style="max-height: 20px">
-	</p>
-	<p class="p-3">visok nivo napora - <img src="<?php echo site_url('assets/img/difficulty/3_level.png')?>" style="max-height: 20px">
-	</p>
-
-</div>
+	<div class="row">
+		<p class="px-3">nizak nivo napora - <img src="<?php echo site_url('assets/img/difficulty/1_level.png')?>" style="max-height: 20px">
+		</p>
+		<p class="px-3">srednji nivo napora - <img src="<?php echo site_url('assets/img/difficulty/2_level.png')?>" style="max-height: 20px">
+		</p>
+		<p class="px-3">visok nivo napora - <img src="<?php echo site_url('assets/img/difficulty/3_level.png')?>" style="max-height: 20px">
+		</p>
+	</div>
 	</div>
 </div>

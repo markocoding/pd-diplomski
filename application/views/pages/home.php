@@ -1,13 +1,13 @@
 
 
 <div class="bg animate__animated animate__fadeIn">
-	<div class="m-auto "  style="padding-top: 30vh;padding-bottom:20vh;text-align: center">
+	<div class="m-auto "  style="padding-top: 35vh;padding-bottom:20vh;text-align: center; font-family: 'Poppins', sans-serif">
 		<section >
-			<img class="img animate__animated animate__fadeInUp" src="<?php echo site_url()?>assets/img/logo/logo5.png" style="max-width: 100px" >
-			<h3 class="animate__animated animate__fadeInUp animate__delay-1s">Svaki uspon je težak</h3>
+<!--			<img class="img animate__animated animate__fadeInUp" src="--><?php //echo site_url()?><!--assets/img/logo/logo5.png" style="max-width: 100px" >-->
+			<h3 class="animate__animated animate__fadeInUp animate__delay-1s" style="font-weight: 300">Svaki uspon je težak</h3>
 		</section>
-
 		<h1 class=" display-4 animate__animated animate__fadeInUp animate__delay-2s"> <b>ali kad si u dobrom društvu <br>svaka prepreka je manja.</b></h1>
+		<img src="<?php echo site_url();?>/assets/img/logo/logo1.png" class="img img-responsive p-3 animate__animated animate__fadeInUp animate__delay-3s">
 
 		<span class="scroll" ></span>
 

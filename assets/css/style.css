@@ -128,6 +128,8 @@ html{
 
 
 }
+/*------------------ ANIMATION ARROW ------------------*/
+
 
 /*------------------ GALLERY ------------------*/
 
@@ -160,26 +162,47 @@ html{
 }
 
 .y2021{
-	background-color: lightcyan;
+	/*background-color: lightcyan;*/
 }
 
 .y2020{
-	background-color: lightgoldenrodyellow;
+	/*background-color: lightgoldenrodyellow;*/
 }
 
 .yAll{
-	background-color: lightgreen;
+	/*background-color: lightgreen;*/
 }
 
 .gallery-img{
-	padding: 5rem;
-	max-height: 80%;
-	margin: auto;
+	max-height: 65vh;
+	margin-top: auto;
 	display: block;
+	border-bottom: 20px solid var(--my-link-color);
 }
 
+.gallery-wrap{
+	padding: 5rem;
+	padding-top: 8rem;
 
+}
 
+.gallery-wrap > h3{
+	margin: 0;
+	padding-top: 1.5rem;
+
+}
+.gallery-wrap > h1{
+	padding-bottom: 100%;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	background-color: var(--my-link-color);
+	font-size: 4.3rem;
+	letter-spacing: 5px;
+	font-weight: 800;
+	color: white;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+}
 /*------------------ CONTACT ------------------*/
 .my-download{
 	font-size: 3.2rem;
@@ -210,8 +233,9 @@ html{
 }
 
 .small-nav{
-	font-size:  16px!important;
-	background-color: var(--my-main-color)!important;
+	/*font-size:  16px!important;*/
+	/*background-color: var(--my-main-color)!important;*/
+	background-color: rgba(133, 165, 168, 0.9)!important;
 	/*background-color: rgba(250, 183, 33,0.9)!important;*/
 
 }
@@ -339,10 +363,34 @@ html{
 	background-image: url("../img/slika3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	background-position: center;
 }
 
+
+.gallery-bg{
+	padding: 7%;
+	background-image: url("../img/alif-ngoylung-jg-6ARMiaPM-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+}
+.gallery-bg > h2{
+	font-weight: 400 ;
+	color: white;
+}
+.gallery-bg > h1{
+	color: white;
+}
+.gallery-bg > h3{
+	margin-left: 10vw;
+	letter-spacing: 2px;
+	font-weight: 400 ;
+	color: white;
+	padding: 10px;
+	background-color: var(--my-main-color);
+}
 
 
 .gear-bg{
@@ -351,7 +399,7 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
-	background-position: center;
+	background-position: top;
 }
 .gear-bg > h2{
 	font-weight: 400 ;
@@ -410,7 +458,7 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
-	background-position: center;
+	background-position: top;
 }
 
 .calendar-bg > h3{
@@ -421,6 +469,15 @@ html{
 	padding: 10px;
 	background-color: var(--my-main-color);
 }
+
+.calendar-bg > h1{
+	margin-left: 10vw;
+	font-weight: 400 ;
+	color: white;
+	padding: 10px;
+
+}
+
 
 .guide-bg{
 	padding: 7%;
@@ -442,10 +499,10 @@ html{
 
 .guide-bg > h2{
 	font-weight: 400 ;
-	color: white;
+	/*color: white;*/
 }
 .guide-bg > h1{
-color: white;
+/*color: white;*/
 }
 .guide-bg > h3{
 	margin-left: 10vw;
@@ -488,12 +545,6 @@ th{
 	border-bottom: var(--my-main-color) solid 15px;
 
 }
-th:nth-child(1){
-	text-align: center!important;
-}
-th:nth-child(4){
-	text-align: center!important;
-}
 td{
 	padding: 1.2rem;
 	transition: 0.2s linear;
@@ -502,12 +553,30 @@ td{
 
 }
 
-tr:hover  td{
+.clickable-row:hover  td{
 	background-color:   var(--my-secondary-color);
 	cursor: pointer;
 	color:  var(--my-link-color)
 	/*font-size: 25px;*/
 }
+
+.my-fa-check{
+	 color: green;
+	 text-align: center;
+	 font-size: 1.8rem;
+ }
+
+.my-fa-false{
+	color: #d51d1b;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.my-fa-ques{
+	color: darkgray;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
 
 /*------------------ COUNTER ------------------*/
 .counter-bg{
