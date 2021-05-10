@@ -33,11 +33,10 @@
 			<div class="table-responsive-md " >
 				<table style="width: 100%; text-align: center">
 					<caption>
-						<p class="mt-2">dostupno- <i class="fas fa-check" style="color: green"></i>&nbsp
-
-						nije dostupno - <i class="fas fa-times" style="color: #d51d1b"></i>&nbsp
-
-						informacija na upit - <i class="fas fa-question-circle" style="color: darkgray"></i>
+						<p class="mt-2">
+							<i class="fas fa-check" style="color: green"></i> - dostupno &nbsp
+							<i class="fas fa-times" style="color: #d51d1b"></i> - nije dostupno &nbsp
+							<i class="fas fa-question-circle" style="color: darkgray"></i> - informacija na upit
 						</p>
 					</caption>
 					<tr>
