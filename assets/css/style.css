@@ -252,76 +252,40 @@ html{
 
 /*------------------ GALLERY ------------------*/
 
-#container_gsap {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:column;
-	height:100vh;
-}
-
-#container_gsap2020 {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:column;
-	height:100vh;
-}
-
-#container_gsapAll {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:column;
-	height:100vh;
-}
-
-.module{
-	height:100%;
-	display:flex;
-
-
-}
-
-.y2021{
-	/*background-color: lightcyan;*/
-}
-
-.y2020{
-	/*background-color: lightgoldenrodyellow;*/
-}
-
-.yAll{
-	/*background-color: lightgreen;*/
-}
-
 .gallery-img{
-	max-height: 65vh;
-	margin-top: auto;
-	display: block;
-	border-bottom: 20px solid var(--my-link-color);
+	max-width: 100%;
+	/*padding-bottom: 30px;*/
 }
 
-.gallery-wrap{
-	padding: 5rem;
-	padding-top: 8rem;
-
+figure {
+	overflow: hidden;
 }
 
-.gallery-wrap > h3{
-	margin: 0;
-	padding-top: 1.5rem;
+.hover03 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover03 figure:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+/*image open*/
+/*body.modal-open {*/
+/*	height: 100vh;*/
+/*	overflow-y: hidden;*/
+/*}*/
 
+.modal-img{
+	width:100%;
+	height:auto;
 }
-.gallery-wrap > h1{
-	padding-bottom: 100%;
-	padding-right: 2rem;
-	padding-left: 2rem;
-	background-color: var(--my-link-color);
-	font-size: 4.3rem;
-	letter-spacing: 5px;
-	font-weight: 800;
-	color: white;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: black;
+.modal-body{
+	padding:0px;
 }
+
 /*------------------ CONTACT ------------------*/
 .my-download{
 	font-size: 3.2rem;
@@ -334,6 +298,7 @@ html{
 }
 
 /*------------------ NAVIGATION ------------------*/
+
 
 .my-navbar{
 	padding-top:  0;

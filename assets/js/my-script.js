@@ -1,4 +1,12 @@
 
+// <!-------------------- Disable effects for mobile ------------------>
+$(document).ready(function () {
+	if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		let niz =  document.querySelectorAll("[data-animate]");
+		let myArray = Array.from(niz);
+		myArray.forEach(element => element.removeAttribute("data-animate") && element.removeAttribute("data-animate-type"));
+	}
+})
 
 
 // <!-------------------- WTF IS THIS ------------------>
@@ -185,39 +193,34 @@ $(document).ready(function () {
 	}
 //              console.log(res.length);
 });
+//<!-------------------- NAVIGATION COLOR ------------------>
 
-// <!-------------------- GALLERY GSAP ------------------>
-
-var matches = document.querySelectorAll("[data-gasp]");
-for (i=0; i < matches.length; i++){
-	let container = matches[i];
-	let module =  matches[i].children[0];
-	let lenghtX = 0;
-
-	if (i % 2){
-		//offset every oder gallery
-		let duzina = module.clientWidth - document.documentElement.clientWidth;
-		module.style.transform = "translate3d(-"+ duzina +"px, 0px, 1px)" ;
-		//change movement direction
-		 lenghtX = (module.clientWidth - document.documentElement.clientWidth) + "px";
+function navClick(el){
+	if (!el.classList.contains('collapsed')){
+		nav = document.getElementById("navbar");
+		nav.style.cssText += 'background-color:var(--my-main-color)!important';
 	}else {
-		 lenghtX = -(module.clientWidth - document.documentElement.clientWidth) + "px";
+		console.log('Navigacija NIJE je otvorena')
+		nav = document.getElementById("navbar");
+		nav.style.cssText -= 'background-color:var(--my-main-color)!important';
 	}
-
-	gsap.registerPlugin(ScrollTrigger);
-	gsap.to(container, {
-		// x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-		x: () => lenghtX,
-		ease: "none",
-		scrollTrigger: {
-			trigger: container,
-			invalidateOnRefresh: true,
-			pin: true,
-			scrub: 1.2,
-			// markers:true,
-			// end: () => "+=" + container.offsetWidth
-		}
-	});
 }
 
+//<!-------------------- GALLERY ------------------>
+
+$(document).ready(function(){
+	$("img").click(function(){
+		var t = $(this).attr("src");
+		var title = $(this).attr("data-title");
+		$('.modal-body').html("<img src='"+t+"' class='modal-img'>");
+		$('.modal-footer').html("<h4> "+title+"</h4>");
+
+
+		const container = document.getElementById("myModal");
+		const modal = new bootstrap.Modal(container);
+		modal.show();
+
+	});
+
+});
 

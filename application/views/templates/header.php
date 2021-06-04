@@ -24,6 +24,7 @@
 
 </head>
 <body >
+
 <nav class="navbar navbar-expand-lg navbar-dark my-navbar " id="navbar"  >
 	<div class="container">
 
@@ -31,11 +32,11 @@
 			<img id="logo" src="<?php echo site_url();?>/assets/img/logo/logo1.png" class="img img-responsive pr-3" >
 		</a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse"  aria-expanded="false" aria-label="Toggle navigation">
+		<button onclick="navClick(this)" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse " id="" >
+		<div class="collapse navbar-collapse " id="navbarSupportedContent" >
 			<ul class="navbar-nav  ml-auto" style="    font-family: 'Poppins', sans-serif;text-transform: capitalize;font-weight: 300;letter-spacing: 1px" >
 				<li class="nav-item my-item" id="savez">
 					<a class="nav-link" href="<?php echo site_url()?>">savez</a>

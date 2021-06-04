@@ -4,121 +4,44 @@
 	<h3 class="display-2 " > naših anvantura</h3>
 </div>
 
+<div class="container my-5">
+	<div class="row hover03">
+		<div class="col-md-4">
+			<figure><img data-title="Ovo je prva slika" class="gallery-img img" src="<?php echo site_url()?>assets/img/travels/vucji-zub-gotrebinje.com_-1024x551.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/d4a188b5c3cd5373d11fb3a4961b1e3b.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Valle-Rosandra-photos-description-Val-Rosandra-1.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/IMG_20200815_114609.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/nasl-ovfp-april-maj-1024x682.jpg"  ></figure>
 
-	<div id="container_gsap" data-gasp >
-		<div class="module y2021 animate__animated animate__fadeInRight"  >
-			<div class="gallery-wrap text-center">
-				<h1 class="display-1">2021</h1>
+		</div>
+		<div class="col-md-4">
+			<figure><img class="gallery-img img" src="<?php echo site_url()?>assets/img/travels/white_wolf.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Rajac2-1-1024x768.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Nacionalni-Park-Durmitor-Autor-NEPOZNAT.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Medvednik.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/P6134157_2.jpg"  ></figure>
 
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/vucji-zub-gotrebinje.com_-1024x551.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-				<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/white_wolf.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/rtanj-nocni-uspon_5ecad22e9ca9c.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/d4a188b5c3cd5373d11fb3a4961b1e3b.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Rajac2-1-1024x768.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
+		</div>
+		<div class="col-md-4">
+			<figure><img class="gallery-img img" src="<?php echo site_url()?>assets/img/travels/rtanj-nocni-uspon_5ecad22e9ca9c.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Specijalni-rezervat-prirode-Zasavica-1024x643.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/2alpes_230206.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/1_via_ferrata_gornjak.jpg"  ></figure>
+			<figure><img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/042944781_n.jpg"  ></figure>
 		</div>
 	</div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" >
 
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body">
+			</div>
+			<div class="modal-footer">
 
-	<div id="container_gsap2020" data-gasp>
-		<div class="module y2020" >
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Specijalni-rezervat-prirode-Zasavica-1024x643.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Valle-Rosandra-photos-description-Val-Rosandra-1.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Nacionalni-Park-Durmitor-Autor-NEPOZNAT.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/2alpes_230206.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/1_via_ferrata_gornjak.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<h1 class="display-1 text-center">2020</h1>
 			</div>
 		</div>
+
 	</div>
-
-
-
-	<div id="container_gsapAll" data-gasp>
-		<div class="module yAll" >
-			<div class="gallery-wrap">
-				<h1 class="display-1 text-center">prethodnih godina...</h1>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/IMG_20200815_114609.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/Medvednik.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/nasl-ovfp-april-maj-1024x682.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/P6134157_2.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-			<div class="gallery-wrap">
-				<img class="gallery-img img " src="<?php echo site_url()?>assets/img/travels/042944781_n.jpg"  >
-				<h3  >Severni Kučaj, Lisac (514 m), Brodica<br>
-					<b>Vodič: </b> Marko Marković</h3>
-				<hr>
-			</div>
-		</div>
-	</div>
+</div>
