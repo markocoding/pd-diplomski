@@ -8,7 +8,7 @@
 	</div>
 </div>
 <div class="container mt-5">
-<div class="row" data-animate="off" data-animate-type="animate__fadeInUp">
+<div class="row animate__fadeInUp animate__animated" >
 
 		
 
@@ -84,9 +84,11 @@
 			
 		</div>
 		<div class="col-md-6">
+			<div class="sticky-top position-sticky "  style="padding-top: 5rem;padding-bottom: 5rem">
+				<h3 class="display-4">Mapa </h3>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11330.453012488197!2d20.4800159!3d44.7683016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd12e2aad5590e385!2sThe%20School%20of%20Electrical%20and%20Computer%20Engineering%20of%20Applied%20Studies!5e0!3m2!1sen!2srs!4v1619890299284!5m2!1sen!2srs"
 					style="border:0;width: 100%;height: 500px" allowfullscreen="" loading="lazy"></iframe>
-
+			</div>
 
 	
 	</div>

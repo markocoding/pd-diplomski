@@ -196,11 +196,13 @@ $(document).ready(function () {
 //<!-------------------- NAVIGATION COLOR ------------------>
 
 function navClick(el){
-	if (!el.classList.contains('collapsed')){
+	let attribut = (el.getAttribute('aria-expanded'))
+	if (attribut === "false"){
+		// console.log('Navigacija je otvorena');
 		nav = document.getElementById("navbar");
 		nav.style.cssText += 'background-color:var(--my-main-color)!important';
 	}else {
-		console.log('Navigacija NIJE je otvorena')
+		// console.log('Navigacija NIJE je otvorena');
 		nav = document.getElementById("navbar");
 		nav.style.cssText -= 'background-color:var(--my-main-color)!important';
 	}
@@ -212,7 +214,7 @@ $(document).ready(function(){
 	$("img").click(function(){
 		var t = $(this).attr("src");
 		var title = $(this).attr("data-title");
-		$('.modal-body').html("<img src='"+t+"' class='modal-img'>");
+		$('.modal-body').html("<img src='"+t+"' class='modal-img' >");
 		$('.modal-footer').html("<h4> "+title+"</h4>");
 
 
@@ -224,3 +226,4 @@ $(document).ready(function(){
 
 });
 
+// style='max-height: 90vh; width: auto; overflow: hidden'

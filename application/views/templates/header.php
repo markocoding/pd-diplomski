@@ -32,7 +32,7 @@
 			<img id="logo" src="<?php echo site_url();?>/assets/img/logo/logo1.png" class="img img-responsive pr-3" >
 		</a>
 
-		<button onclick="navClick(this)" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button onclick="navClick(this)" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
