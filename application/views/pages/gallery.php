@@ -1,10 +1,10 @@
-<div class="gallery-bg animate__animated animate__fadeInRight" >
+<div class="gallery-bg animate__animated animate__fadeInLeft" >
 <!--	<h2 class="display-1 " >Upoznajte se </h2>-->
 	<h1 class="display-2 " >galerija </h1>
 	<h3 class="display-2 " > naših anvantura</h3>
 </div>
 
-<div class="container my-5">
+<div class="container my-5 animate__animated animate__fadeInUp">
 	<div class="row hover03">
 		<div class="col-md-4">
 			<figure><img data-title="Sokolske planine (973m)" class="gallery-img img" src="<?php echo site_url()?>assets/img/travels/sokolska-planina.jpg"  ></figure>

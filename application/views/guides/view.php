@@ -43,7 +43,7 @@
 					<tr>
 						<th>datum</th>
 						<th>avantura</th>
-						<th>vodič</th>
+<!--						<th>vodič</th>-->
 						<th>napor*</th>
 					</tr>
 					<?php foreach ($travels as $travel) :?>
@@ -52,7 +52,7 @@
 							<td  style="font-family: 'Lato', sans-serif;letter-spacing: 2px; text-align: center"> <?php echo substr($travel['date'], -5)?></td>
 							<td style="width: 60%;transition: 0.2s linear;"> <?php echo $travel['heading']?>
 
-							<td><?php echo $guide['name']; $i++?></td>
+<!--							<td>--><?php //echo $guide['name']; $i++?><!--</td>-->
 							<td><img src="<?php echo site_url('assets/img/difficulty/'.$travel['difficulty'].'_level.png')?>" style="max-height: 40px"></td>
 						</tr>
 

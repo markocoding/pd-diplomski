@@ -1,3 +1,24 @@
+// <!-------------------- Fast months sorting ------------------>
+
+function moView(el){
+	let allElements2 = document.getElementsByClassName('moView moViewActive') ;
+	if (allElements2[0] !== undefined){
+		allElements2[0].classList.remove('moViewActive');
+		console.log(allElements2[0]);
+	}
+
+	let prob = el.firstChild;
+	// console.log(prob);
+	prob.classList.add('moViewActive');
+
+	let allElements = document.getElementsByClassName('carousel-item active') ;
+	allElements[0].classList.remove('active');
+
+	let id = el.id.slice(2);
+	let element = document.getElementById(id);
+	element.classList.add('active')
+	// console.log(element);
+}
 
 // <!-------------------- Disable effects for mobile ------------------>
 $(document).ready(function () {

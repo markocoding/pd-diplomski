@@ -17,7 +17,7 @@
 <div class="container " > <!-- ako se dira p/m containera mora i row jer su povezani po difoltu  -->
 
 	<div class="row" style=" margin-top: 10rem;margin-bottom: 10rem">
-		<div class="col-lg-6 col-md-12">
+		<div class="col-lg-6 col-md-12 mobile">
 			<h1 data-animate="off" data-animate-type="animate__fadeInLeftBig" class="display-1 " style=";font-weight: 400;"> uspon!</h1>
 			<h3 data-animate="off" data-animate-type="animate__fadeInLeftBig" class="display-4 pl-2 pb-2  " style="color: white;margin-left: 200px; letter-spacing: 2px;  background-color:var(--my-main-color)"> svi planinari</h3><br>
 			<h5 data-animate="off" data-animate-type="animate__fadeInLeftBig" >Članovi planinarske organizacije u svemu su ravnopravni bez obzira na godine, uzrast, pol i veru.
@@ -67,7 +67,7 @@
 	<div class="row " style=" margin-top: 10rem">
 <!--		<div class="gear-bg-home">-->
 <!--		</div>-->
-		<div class="col-12" >
+		<div class="col-12 mobile" >
 			<h2 data-animate="off" data-animate-type="animate__fadeInRight" class="display-2 " style="font-weight: 400;">Kod nas možeš </h2>
 			<h1 data-animate="off" data-animate-type="animate__fadeInRight" class="display-3 pl-2 pb-2 " style="margin-left: 200px; letter-spacing: 2px;">da pronđeš</h1>
 			<h3 data-animate="off" data-animate-type="animate__fadeInRight" class="display-3 " style=";font-weight: 400;color: white; letter-spacing: 2px;  background-color:var(--my-main-color)"> svu opremu  koja ti je potrebna!</h3>
