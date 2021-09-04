@@ -14,7 +14,10 @@ $nivoi = array(1 =>'nizak nivo napora',
 			<h5 class=""> <?php echo $travels['body'] ?></h5>
 		</div>
 		<div class="col-md-6 mt-5">
-			<h5><b>Datum polaska: </b><?php echo $travels['date'] ?></h5>
+
+			<img  src="<?php echo site_url('/assets/img/travels/') . $travels['travel_image'] ?>" style="max-width: 100%">
+
+			<h5 class="mt-3"><b>Datum polaska: </b><?php echo $travels['date'] ?></h5>
 			<h5><b>Nivo napora: </b><?php
 				foreach ($nivoi as $nivo){
 					if ($travels['difficulty'] == array_search($nivo, $nivoi)){
@@ -23,8 +26,6 @@ $nivoi = array(1 =>'nizak nivo napora',
 				}
 				?></h5>
 			<h5><b>Vodič: </b><a href="<?php echo site_url('/guides/'.$guide['slug']);?>"><?php echo $guide['name'] ?></a></h5>
-			<img class="mt-5" src="<?php echo site_url('/assets/img/travels/') . $travels['travel_image'] ?>" style="max-width: 100%">
-
 		</div>
 	</div>
 

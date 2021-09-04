@@ -7,7 +7,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3 d-none d-xl-block ">
-			<div class="sticky-top position-sticky" style="padding-top: 3rem; z-index: 0">
+			<div class="sticky-top position-sticky  animate__animated animate__fadeInUp" style="padding-top: 3rem; z-index: 0">
 				<div class="card " style="width: 18rem;margin-top: 3rem">
 					<div class="card-body p-0" style="">
 						<h4 class="card-title p-2 m-0" style="background-color: var(--my-main-color) ;color: white ; text-align: center">Izaberi idealan mesec za svoje putovanje!<hr style="background-color: white"></h4>
@@ -32,31 +32,30 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-12 col-xl-9">
+		<div class="col-lg-12 col-xl-9" style="display: inline-table;">
 			<div id="carouselExampleControls" class="carousel slide mt-5 animate__animated animate__fadeInUp"
 				 data-ride="carousel" data-interval="0">
-				<?php $i = 0; ?>
 				<div class="carousel-inner">
 					<?php $meseci = array(
-						'01' => 'januar',
-						'02' => 'februar',
-						'03' => 'mart',
-						'04' => 'april',
-						'05' => 'maj',
-						'06' => 'jun',
-						'07' => 'jul',
-						'08' => 'avgust',
-						'09' => 'septembar',
-						'10' => 'oktobar',
-						'11' => 'novembar',
-						'12' => 'decembar'
+						"01" => "januar",
+						"02" => "februar",
+						"03" => "mart",
+						"04" => "april",
+						"05" => "maj",
+						"06" => "jun",
+						"07" => "jul",
+						"08" => "avgust",
+						"09" => "septembar",
+						"10" => "oktobar",
+						"11" => "novembar",
+						"12" => "decembar"
 					);
 
 					foreach ($meseci as $mesec):?>
 
 						<div id="<?php echo $mesec?>" class="carousel-item <?php if (array_search($mesec, $meseci) === date("m")) {echo 'active';} ?>">
 							<div class="row align-items-start h-25 ">
-								<div class="col align-self-center text-center">
+								<div class="col d-block d-xl-none  align-self-center text-center">
 									<a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true">
 											<h1 class="m-0 p-0"><i class="fas fa-chevron-left " style="color: var(--my-link-color); padding: 40px; padding-top: 100%; padding-bottom: 100%;"></i></h1>
@@ -69,7 +68,7 @@
 										<b><?php echo $mesec ?></b>
 									</h1>
 								</div>
-								<div class="col align-self-center text-center ">
+								<div class="col  d-block d-xl-none align-self-center text-center ">
 									<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 										<span class="carousel-control-prev-icon" aria-hidden="true">
 											<h1 class="m-0 p-0"><i class="fas fa-chevron-right " style="color: var(--my-link-color); padding: 40px; padding-top: 100%; padding-bottom: 100%;"></i></h1>
@@ -86,21 +85,24 @@
 										<th>avantura</th>
 										<th>vodič</th>
 										<th>napor*</th>
-
 									</tr>
+
 									<?php foreach ($travels as $travel) : ?>
-										<?php if (substr($travel['date'], -5, 2) === array_search($mesec, $meseci)): ?>
+									<?php if (substr($travel['date'], -5, 2) == array_search($mesec, $meseci)): ?>
 
-											<tr id="<?php echo $travel['id'] ?>" class="clickable-row"	data-href="<?php echo site_url('/calendars/' . $travel['id']) ?>">
-												<td style="font-family: 'Lato', sans-serif;letter-spacing: 2px; text-align: center"><?php echo substr($travel['date'], -5) ?></td>
-												<td style="width: 60%;transition: 0.2s linear;"> <?php echo $travel['heading'] ?></a>
-												</td>
-												<td><?php echo $travel['name'] ?></td>
-												<td><img src="<?php echo site_url('assets/img/difficulty/' . $travel['difficulty'] . '_level.png') ?>"	style="max-height: 40px"></td>
-											</tr>
+										<tr id="<?php echo $travel['id'] ?>" class="clickable-row"	data-href="<?php echo site_url('/calendars/' . $travel['id']) ?>">
+											<td style="font-family: 'Lato', sans-serif;letter-spacing: 2px; text-align: center"><?php echo substr($travel['date'], -5) ?> </td>
+											<td style="width: 60%;transition: 0.2s linear;"> <?php echo $travel['heading'] ?></a>
+											</td>
+											<td><?php echo $travel['name'] ?></td>
+											<td><img src="<?php echo site_url('assets/img/difficulty/' . $travel['difficulty'] . '_level.png') ?>"	style="max-height: 40px"></td>
+										</tr>
 
-										<?php endif; $i++ ?>
+									<?php endif;?>
 									<?php endforeach; ?>
+
+
+
 
 								</table>
 							</div>
@@ -108,6 +110,13 @@
 						</div>
 					<?php endforeach; ?>
 				</div>
+
+
+
+
+
+
+
 
 			</div>
 			<h5 class="mt-5"><b>napor*</b></h5>
