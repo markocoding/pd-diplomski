@@ -19,7 +19,7 @@
 		<?php foreach ($guides as $guide):?>
 
 		
-			<div class="col-xl-3 col-lg-7 col-md-7 col-xs-12 ">
+			<div class="col-xl-3 col-lg-7 col-md-7 col-xs-12 " data-animate="off" data-animate-type="animate__fadeInUp">
 
 				<div class="card " >
 					<img src="<?php echo site_url('assets/img/guide/'.$guide['photo']) .'_wide.jpg' ?>" class="card-img-top img-fluid neki" alt="">

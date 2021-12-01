@@ -6,8 +6,10 @@
 <div class="container "  >
 	<div class="row mb-5 animate__fadeInUp animate__animated"  >
 		<div class=" col-lg-3 col-md-12  ">
+
 			<div class="sticky-top position-sticky" style="top: 15rem;transform: translate3d(0px, -10rem, 0px); margin-bottom: 5rem;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; " >
-				<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo']. '_sq.jpg')?>" class="guide-img " >
+				
+			<!-- <img  src="<?php echo site_url('assets/img/guide/'.$guide['photo']. '_sq.jpg')?>" class="guide-img " >
 				<h3  class="mt-5 text-right" style="transform: translate3d(0px, -10rem, 0px); position: absolute; right: 0; bottom: 13rem" >
 					<a href="https://www.facebook.com/" target="_blank" style="color: white"><i class="social fab fa-facebook-f facebook"></i></a>
 					<a href="https://www.instagram.com/" target="_blank" style="color: white"><i class="social fab fa-instagram instagram"></i></a>
@@ -26,8 +28,40 @@
 						<b>e-mail:</b><br>
 						<span class="pl-4"><?php echo $guide['mail']?></span>
 					</h3>
+				</div> -->
+
+				<div class="card " >
+					<img src="<?php echo site_url('assets/img/guide/'.$guide['photo']) .'_sq.jpg' ?>" class="card-img-top img-fluid neki" alt="">
+					<div class="card-body guide-card-bg pt-3 pb-4" >
+					
+						
+						<h6 class="small-title">Pozicija</h6>
+						<h5 class="pl-2"><b><?php echo ucfirst( $guide['position'])?></b></h5>
+
+						<h6 class="small-title">Lokacija</h6>
+						<h5 class="pl-2"><b><?php echo $guide['city']?></b></h5>
+
+						<div class="hr-style"></div>
+
+						<h6 class="small-title">Kontakt</h6>
+						<h5 class="pl-2">telefon: <b><?php echo $guide['mail']?></b></h5>
+						<h5 class="pl-2">e-mail: <b>+381 <?php echo $guide['number']?></b></h5>
+					
+						
+			
+
+						<h3  class="mt-5 text-right" >
+							<a href="https://www.facebook.com/" target="_blank" style="color: black"><i class="social fab fa-facebook-f facebook"></i></a>
+							<a href="https://www.instagram.com/" target="_blank" style="color: black"><i class="social fab fa-instagram instagram"></i></a>
+							<a href="https://www.twitter.com/" target="_blank" style="color: black"><i class="social fab fa-twitter twitter"></i></a>
+						</h3>
+					</div>
 				</div>
+
+
+
 			</div>
+
 		</div>
 		<div class=" col-lg-9  col-md-12">
 			<h1 class="display-1 mb-5"><?php echo $guide['name']?></h1>

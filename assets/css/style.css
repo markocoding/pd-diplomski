@@ -284,8 +284,8 @@ html{
 /*------------------ SOCIAL ------------------*/
 .social{
 	transition: 0.2s ease-in-out;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
 	padding-top: 2rem;
 
 }
