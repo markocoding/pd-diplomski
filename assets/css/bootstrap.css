@@ -2551,6 +2551,17 @@ a.btn.disabled,
 fieldset:disabled a.btn {
 	pointer-events: none;
 }
+.btn-my-btn {
+	color: #fff;
+	background-color: var(--my-link-color);
+	border-color: var(--my-link-color);
+}
+
+.btn-my-btn:hover {
+	color: #fff;
+	background-color: #eab521;
+	border-color: #e4a720;
+}
 
 .btn-primary {
 	color: #fff;
@@ -4801,7 +4812,7 @@ input[type="button"].btn-block {
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
 	min-height: 1px;
-	padding: 1.25rem;
+	padding: 2.25rem;
 }
 
 .card-title {

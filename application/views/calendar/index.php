@@ -53,7 +53,7 @@
 
 					foreach ($meseci as $mesec):?>
 
-						<div id="<?php echo $mesec?>" class="carousel-item <?php if (array_search($mesec, $meseci) === date("m")) {echo 'active';} ?>">
+						<div id="<?php echo $mesec?>" class="carousel-item <?php if (array_search($mesec, $meseci) == date("m")) {echo 'active';} ?>">
 							<div class="row align-items-start h-25 ">
 								<div class="col d-block d-xl-none  align-self-center text-center">
 									<a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">

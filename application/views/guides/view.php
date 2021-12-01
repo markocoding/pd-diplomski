@@ -5,7 +5,7 @@
 
 <div class="container "  >
 	<div class="row mb-5 animate__fadeInUp animate__animated"  >
-		<div class="col-xl-4 col-lg-5  col-md-12  ">
+		<div class=" col-lg-3 col-md-12  ">
 			<div class="sticky-top position-sticky" style="top: 15rem;transform: translate3d(0px, -10rem, 0px); margin-bottom: 5rem;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; " >
 				<img  src="<?php echo site_url('assets/img/guide/'.$guide['photo']. '_sq.jpg')?>" class="guide-img " >
 				<h3  class="mt-5 text-right" style="transform: translate3d(0px, -10rem, 0px); position: absolute; right: 0; bottom: 13rem" >
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xl-8 col-lg-7 col-md-12">
+		<div class=" col-lg-9  col-md-12">
 			<h1 class="display-1 mb-5"><?php echo $guide['name']?></h1>
 
 			<h5><?php echo $guide['bio']?></h5>

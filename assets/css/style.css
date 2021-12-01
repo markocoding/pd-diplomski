@@ -21,6 +21,8 @@ html{
 	background: var(--my-link-color);
 }
 
+/*------------------ GENERAL ------------------*/
+
 
 
 /*------------------ SCROLL ANMIATION ------------------*/
@@ -94,6 +96,90 @@ html{
 	}
 }
 /*------------------ GUIDE ------------------*/
+
+.name-offset{
+	/* transform: translateY(3em); */
+	/* width: 100%;
+	background-color: white;
+	-webkit-box-shadow: 0px -13px 23px 47px #FFFFFF; 
+	box-shadow: 0px -13px 23px 47px #FFFFFF; */
+	/* padding-bottom: 0.5em; */
+}
+
+/* .name-offset > b > span{
+
+} */
+
+.hr-style{
+	background-color: var(--my-link-color);
+	width: 30px;
+	height: 3px;
+	text-align: start;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+.small-title{
+	font-weight: 100;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 1em;
+	color: rgb(111, 111, 111);
+	letter-spacing: 0.08em;
+}
+
+.card{
+	background-image: url("../img/guide-card-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	margin-top: 2em;
+	border: 0!important;
+
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
+}
+
+.guide-card-bg{
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,0.737114914325105) 55%, rgba(255,255,255,0.5942577714679622) 100%); 
+}
+
+
+.new-guide-btn {
+    transition: all .4s ease;
+    background-color: var(--my-link-color);
+	color: white;
+	border: 2px var(--my-link-color) solid;
+	padding: 0.5em;
+	border-radius: 0.25rem;
+	padding-left: 1.8em;
+	padding-right: 1.8em;
+	font-family: 'Poppins', sans-serif;
+}
+.new-guide-btn:hover {
+    color: var(--my-link-color);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .guide-card-link{
 	color: white;
 	transition: all 0.2s cubic-bezier(0.65, -0.25, 0.25, 1.95);
@@ -365,18 +451,17 @@ figure {
 	background-image: url("../img/gear-home/cepin-sm.jpg"), url("../img/gear-home/cepin-sm-blur.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% ;
-	/*background-attachment: fixed;*/
+	
 	background-position: center;
 	transform: scale(1.2);
 	transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
-
 
 }
 .gear-home-overlay-2{
 	background-image: url("../img/gear-home/crampons-sm.jpg"), url("../img/gear-home/crampons-sm-blur.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	/*background-attachment: fixed;*/
+	
 	background-position: center;
 	transform: scale(1.2);
 	transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
@@ -386,7 +471,7 @@ figure {
 	background-image: url("../img/gear-home/rope-sm.jpg"), url("../img/gear-home/rope-sm-blur.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% ;
-	/*background-attachment: fixed;*/
+	
 	background-position: top;
 	transform: scale(1.2);
 	transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
@@ -394,7 +479,7 @@ figure {
 }
 
 .text-to-show{
-	font-size: 6.3rem;
+	font-size:  6.3rem;
 	letter-spacing: 5px;
 	font-weight: 800;
 	text-align: center;
@@ -425,23 +510,59 @@ figure {
 	cursor: pointer;
 }
 
-.gear-home-overlay-1:hover{
+/* .gear-home-overlay-1:hover{
 	transform: scale(1.1);
-	/*filter: blur(3px);*/
+	
 	background-image: url("../img/gear-home/cepin-sm-blur.jpg");
 }
 
 .gear-home-overlay-2:hover{
 	transform: scale(1.1);
-	/*filter: blur(3px);*/
+	
 	background-image: url("../img/gear-home/crampons-sm-blur.jpg");
 }
 
 .gear-home-overlay-3:hover{
 	transform: scale(1.1);
-	/*filter: blur(3px);*/
+	
 	background-image: url("../img/gear-home/rope-sm-blur.jpg");
-}
+} */
+
+ /* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { */
+	.gear-home-overlay-1{
+		background-image: url("../img/gear-home/cepin.jpg"), url("../img/gear-home/cepin-blur.jpg");
+	
+	}
+	.gear-home-overlay-2{
+		background-image: url("../img/gear-home/crampons.jpg"), url("../img/gear-home/crampons-blur.jpg");
+	
+	}
+	.gear-home-overlay-3{
+		background-image: url("../img/gear-home/rope.jpg"), url("../img/gear-home/rope-blur.jpg");
+	
+	}
+
+
+	.gear-home-overlay-1:hover{
+		transform: scale(1.1);
+		/*filter: blur(3px);*/
+		background-image: url("../img/gear-home/cepin-blur.jpg");
+	}
+	
+	.gear-home-overlay-2:hover{
+		transform: scale(1.1);
+		/*filter: blur(3px);*/
+		background-image: url("../img/gear-home/crampons-blur.jpg");
+	}
+	
+	.gear-home-overlay-3:hover{
+		transform: scale(1.1);
+		/*filter: blur(3px);*/
+		background-image: url("../img/gear-home/rope-blur.jpg");
+	}
+	
+ /* } */
 
 
 /*===================== BACKGROUNDS =====================*/
