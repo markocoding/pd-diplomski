@@ -1,5 +1,5 @@
 <div class="calendar-bg animate__animated animate__fadeInLeft">
-	<h2 class="display-1 ">planiraj</h2>
+	<h2 class="display-1 ">Planiraj</h2>
 	<h1 class="display-2 ">avanture </h1>
 	<h3 class="display-2 ">tokom cele godine!</h3>
 </div>

@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-12 text-left" >
-				<h3 data-animate="off" data-animate-type="animate__fadeInRight"  class="display-4 " style="; letter-spacing: 2px; "> više od</h3>
+				<h3 data-animate="off" data-animate-type="animate__fadeInRight"  class="display-4 " style="; letter-spacing: 2px; "> Više od</h3>
 				<h1 data-animate="off" data-animate-type="animate__fadeInRight"  class="display-1 " style="font-weight: 400 ; "> 150 uspešnih  </h1>
 				<h1 data-animate="off" data-animate-type="animate__fadeInRight"  class="display-2 " style="font-weight: 400 ;">  ekspedicija! </h1>
 				<br>
