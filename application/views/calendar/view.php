@@ -13,7 +13,7 @@ $nivoi = array(1 =>'nizak nivo napora',
 		
 		<div class="col-md-6 mt-5 text-center" >
 			<h5 class="text-left mb-5" > <?php echo $travels['body'] ?></h5>
-			<h4><a href="<?php echo site_url()?>contact" class="new-guide-btn">Prijavi se</a></h4>
+			<h5><a href="<?php echo site_url()?>contact" class="new-guide-btn">Prijavi se</a></h5>
 
 			<!-- <a href="<?php echo site_url()?>contact">
 			<button type="button" class="btn btn-my-btn" style="padding-left: 5rem; padding-right: 5rem;font-family: 'Poppins', sans-serif;"><h5>Prijavi se</h5></button>

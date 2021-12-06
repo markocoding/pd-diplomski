@@ -76,8 +76,9 @@
 						<label for="exampleFormControlTextarea1">Sadržaj poruke</label>
 						<textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
 					</div>
-					<h5 class=" mt-5">
-						<a href="" class="my-btn">pošalji </a>
+					<h5 class=" mt-5 " style="text-align: center">
+					<a href="#" class="new-guide-btn"> Pošalji</a>
+
 					</h5>
 			</form>
 			</h5>

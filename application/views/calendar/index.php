@@ -4,6 +4,24 @@
 	<h3 class="display-2 ">tokom cele godine!</h3>
 </div>
 
+<?php 
+$meseci = array(
+				"01" => "januar",
+				"02" => "februar",
+				"03" => "mart",
+				"04" => "april",
+				"05" => "maj",
+				"06" => "jun",
+				"07" => "jul",
+				"08" => "avgust",
+				"09" => "septembar",
+				"10" => "oktobar",
+				"11" => "novembar",
+				"12" => "decembar"
+			);
+
+?>
+
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3 d-none d-xl-block ">
@@ -16,17 +34,17 @@
 <!--							the card's content.</p>-->
 						<div style="text-align: center;background-color: white ">
 							<a onclick="moView(this)" style="margin: 0" id="f-januar" class="card-link"><h4 class="moView ">Januar</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-februar" class="card-link"><h4 class="moView ">februar</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-mart" class="card-link"><h4 class="moView ">mart</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-april" class="card-link"><h4 class="moView ">april</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-maj" class="card-link"><h4 class="moView ">maj</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-jun" class="card-link"><h4 class="moView ">jun</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-jul" class="card-link"><h4 class="moView ">jul</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-avgust" class="card-link"><h4 class="moView ">avgust</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-septembar" class="card-link"><h4 class="moView ">septembar</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-oktobar" class="card-link"><h4 class="moView ">oktobar</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-novembar" class="card-link"><h4 class="moView ">novembar</h4></a>
-							<a onclick="moView(this)" style="margin: 0" id="f-decembar" class="card-link"><h4 class="moView ">decembar</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-februar" class="card-link"><h4 class="moView ">Februar</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-mart" class="card-link"><h4 class="moView ">Mart</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-april" class="card-link"><h4 class="moView ">April</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-maj" class="card-link"><h4 class="moView ">Maj</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-jun" class="card-link"><h4 class="moView ">Jun</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-jul" class="card-link"><h4 class="moView ">Jul</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-avgust" class="card-link"><h4 class="moView ">Avgust</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-septembar" class="card-link"><h4 class="moView ">Septembar</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-oktobar" class="card-link"><h4 class="moView ">Oktobar</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-novembar" class="card-link"><h4 class="moView ">Novembar</h4></a>
+							<a onclick="moView(this)" style="margin: 0" id="f-decembar" class="card-link"><h4 class="moView ">Decembar</h4></a>
 						</div>
 					</div>
 				</div>
@@ -36,22 +54,7 @@
 			<div id="carouselExampleControls" class="carousel slide mt-5 animate__animated animate__fadeInUp"
 				 data-ride="carousel" data-interval="0">
 				<div class="carousel-inner">
-					<?php $meseci = array(
-						"01" => "januar",
-						"02" => "februar",
-						"03" => "mart",
-						"04" => "april",
-						"05" => "maj",
-						"06" => "jun",
-						"07" => "jul",
-						"08" => "avgust",
-						"09" => "septembar",
-						"10" => "oktobar",
-						"11" => "novembar",
-						"12" => "decembar"
-					);
-
-					foreach ($meseci as $mesec):?>
+					<?php foreach ($meseci as $mesec):?>
 
 						<div id="<?php echo $mesec?>" class="carousel-item <?php if (array_search($mesec, $meseci) == date("m")) {echo 'active';} ?>">
 							<div class="row align-items-start h-25 ">

@@ -790,6 +790,8 @@ td{
 	/*background-color: rgba(255,187,39,0.83);*/
 	margin: 0;
 	padding: 0.1rem;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
 	transition: ease-in-out 0.1s;
 }
 

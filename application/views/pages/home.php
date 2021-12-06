@@ -55,7 +55,9 @@
 					<br><br>
 					Planinarski klubovi/društva pripremaju godišnje programe planinarskih aktivnosti za svaku godinu sa raznovrsnim sadržajima akcija, uspona, planinarskih takmičenja, u zemlji i inostanstvu.
 					<br><br><br>
-					<a  href='<?php echo site_url()?>calendar' class="my-btn">pogledaj sve ture </a>
+
+					<p ><a href="<?php echo site_url()?>calendar" class="new-guide-btn"> Pogledaj sve ture</a></p>
+
 
 
 				</h5>
