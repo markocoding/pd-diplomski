@@ -21,7 +21,7 @@
 			<h1 data-animate="off" data-animate-type="animate__fadeInLeftBig" class="display-1 " style=";font-weight: 400;"> uspon!</h1>
 			<h3 data-animate="off" data-animate-type="animate__fadeInLeftBig" class="display-4 pl-2 pb-2  " style="color: white;margin-left: 200px; letter-spacing: 2px;  background-color:var(--my-main-color)"> svi planinari</h3><br>
 			<h5 data-animate="off" data-animate-type="animate__fadeInLeftBig" >Članovi planinarske organizacije u svemu su ravnopravni bez obzira na godine, uzrast, pol i veru.
-				Učlanjenjem u jedno planinarsko društvo stičete pravo da učestvujete u planinarskim akcijama, bilo kog planinarskog društva ili kluba.   news-thumb
+				Učlanjenjem u jedno planinarsko društvo stičete pravo da učestvujete u planinarskim akcijama, bilo kog planinarskog društva ili kluba.   
 				<br><br>
 				<b>Učlanjenjem u planinarsku organizaciju stičete mogućnost obučavanja za planinarske veštine i sticanje raznovrsnih znanja o planini i prirodi. Možete se
 				opredeliti da postanete visokogorac, alpinista, planinski vodič, sportski penjač, speleolog-planinar, gorski spasilac, orjentirac i još mnogo toga.</b>
