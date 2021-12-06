@@ -16,4 +16,5 @@ This is simple project and doesn't need much setup.
 3. Upload database to your local server.
 4. That's all!
 
-Footnote: DO NOT change the database or the main file name if you don't apply the same changes throughout the whole project.
+##Footnote: 
+	DO NOT change the database or the main file name if you don't apply the same changes throughout the whole project.
